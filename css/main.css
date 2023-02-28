@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* Roboto Slab */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-slab-v24-latin-regular.woff2") format("woff2"), url("../fonts/roboto-slab-v24-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/roboto-slab-v24-latin-600.woff2") format("woff2"), url("../fonts/roboto-slab-v24-latin-600.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-slab-v24-latin-700.woff2") format("woff2"), url("../fonts/roboto-slab-v24-latin-700.woff") format("woff");
+}
+/* EB Garamond */
+@font-face {
+  font-display: swap;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/eb-garamond-v26-latin-regular.woff2") format("woff2"), url("../fonts/eb-garamond-v26-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/eb-garamond-v26-latin-500.woff2") format("woff2"), url("../fonts/eb-garamond-v26-latin-500.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/eb-garamond-v26-latin-600.woff2") format("woff2"), url("../fonts/eb-garamond-v26-latin-600.woff") format("woff");
+}
+html {
+  scroll-behavior: smooth; /* плавная прокрутка скрол */
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: rgba(255, 251, 221, 0.45);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover; /* определяет как содержимое заменяемого элемента <img> 
+ или <video>, должно заполнять контейнер относительно его 
+ высоты и ширины. */
+  /*    cover - смещаемый контент меняет свой размер таким образом, 
+                      чтобы сохранять свои пропорции при заполнении блока: окончательный размер 
+                      контента будет определён как "покрытие" блока, ограничиваясь его шириной 
+                      и высотой. */
+}
+
+/* flex-grow: 1; - свойство определяет коэффициент увеличения гибкого элемента по отношению 
+  к другим гибким элементам внутри одного контейнера при условии, что в нем есть свободное 
+  пространство. */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* изменяет вид маркера для каждого элемента 
+списка (используется только в таком написании). */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding-bottom: 52px;
+}
+
+/* tablet: 84px
+desktop: 84px *//*# sourceMappingURL=main.css.map */

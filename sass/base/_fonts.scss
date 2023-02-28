@@ -1,0 +1,68 @@
+/* Roboto Slab */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-slab-v24-latin-regular.woff2') format('woff2'),
+         url('../fonts/roboto-slab-v24-latin-regular.woff') format('woff');
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/roboto-slab-v24-latin-600.woff2') format('woff2'),
+         url('../fonts/roboto-slab-v24-latin-600.woff') format('woff');
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-slab-v24-latin-700.woff2') format('woff2'),
+         url('../fonts/roboto-slab-v24-latin-700.woff') format('woff');
+  }
+
+  /* EB Garamond */
+@font-face {
+    font-display: swap;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/eb-garamond-v26-latin-regular.woff2') format('woff2'),
+         url('../fonts/eb-garamond-v26-latin-regular.woff') format('woff');
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/eb-garamond-v26-latin-500.woff2') format('woff2'),
+         url('../fonts/eb-garamond-v26-latin-500.woff') format('woff');
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/eb-garamond-v26-latin-600.woff2') format('woff2'),
+         url('../fonts/eb-garamond-v26-latin-600.woff') format('woff');
+  }
+
+
+
+
+
+// @include font(Montserrat, montserrat-regular, 400, normal);
+// @include font(Montserrat, montserrat300, 300, normal);
+// @include font(Montserrat, montserrat500, 500, normal);
+// @include font(Montserrat, montserrat600, 600, normal);
+// @include font(Montserrat, montserrat700, 700, normal);
+// @include font(FilmP3, FilmP3Bold, 700, normal);
+// @include font(TimesNewRoman, TimesNewRoman, 400, normal);
+// @include font(TimesNewRoman, TimesNewRoman-Bold, 700, normal);

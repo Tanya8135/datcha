@@ -1,0 +1,40 @@
+@mixin min-mobile {
+  @media screen and (min-width: 320px) and (max-width: 413px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (min-width: 414px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1024px) and (max-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin short-font($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin font($fs, $fw, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
