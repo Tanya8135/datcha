@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/* Marck Script */
+@font-face {
+  font-display: swap;
+  font-family: "Marck Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/marck-script-v16-latin-regular.woff2") format("woff2"), url("../fonts/marck-script-v16-latin-regular.woff") format("woff");
+}
 /* Roboto Slab */
 @font-face {
   font-display: swap;
