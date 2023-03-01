@@ -1,0 +1,26 @@
+.title-abou {
+  @include font(30px, 700);
+
+  letter-spacing: 0.05em;
+  text-shadow: 3px 4px 10px $title-shadow;
+  color: $primary-color;
+  padding: 0 0 18px 38px;
+}
+
+.text-about {
+  color: $secondary-color;
+}
+
+.text {
+  min-width: 317px;
+  text-indent: 20px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0 46px 0 19px;
+
+  &--bottom {
+    margin-bottom: 0;
+  }
+}
+
+

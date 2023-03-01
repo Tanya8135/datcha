@@ -16,6 +16,12 @@
   }
 }
 
+@mixin tabletMin {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media screen and (min-width: 1024px) and (max-width: 1920px) {
     @content;
@@ -33,8 +39,7 @@
   line-height: $lh;
 }
 
-@mixin font($fs, $fw, $lh) {
+@mixin font($fs, $fw) {
   font-size: $fs;
   font-weight: $fw;
-  line-height: $lh;
 }

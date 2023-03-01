@@ -1,0 +1,20 @@
+.nav-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // padding-top: 15px;
+  padding: 15px 0;
+}
+
+.logo {
+  // padding-bottom: 15px;
+  width: 100px;
+}
+
+.burger-menu {
+  fill: $primary-color;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: none;
+}

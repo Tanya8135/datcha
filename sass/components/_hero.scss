@@ -1,0 +1,56 @@
+.hero {
+  max-width: 414px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/alley-fon-414.jpg);
+
+  @include retina {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/alley-fon@2-414.jpg);
+  }
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0;
+}
+
+.title-hero {
+  @include short-font(90px, 1.24);
+
+  font-family: 'Marck Script', cursive;
+  letter-spacing: 0.15em;
+  text-align: center;
+  color: $accent-color;
+  text-shadow: 4px 8px 8px $accent-shadow;
+  padding-top: 219px;
+}
+
+.subtitle-hero {
+  /* потом связать еще с одни subtitle */
+  @include font(20px, 600);
+
+  font-family: 'EB Garamond', serif;
+  letter-spacing: 0.15em;
+  text-align: center;
+  color: $accent-color;
+  padding-bottom: 162px;
+}
+
+.social {
+  display: flex;
+  justify-content: end;
+  padding: 0 15px 15px;
+}
+
+.social_item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.icon-color {
+  fill: $icon-social;
+}
