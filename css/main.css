@@ -119,10 +119,6 @@ address {
   padding: 15px 0;
 }
 
-.logo {
-  width: 100px;
-}
-
 .burger-menu {
   fill: #263e24;
   background-color: transparent;
@@ -201,17 +197,14 @@ address {
 }
 
 .text-about {
-  color: #423d1b;
-}
-
-.text {
   min-width: 317px;
   text-indent: 20px;
+  color: #423d1b;
   margin: 0;
   margin-bottom: 15px;
   padding: 0 46px 0 19px;
 }
-.text--bottom {
+.text-about--bottom {
   margin-bottom: 0;
 }
 
