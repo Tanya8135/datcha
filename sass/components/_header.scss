@@ -6,11 +6,27 @@
   padding: 15px 0;
 }
 
-// .logo img{
-//   // padding-bottom: 15px;
-//   width: 100px;
-//   height: 100px;
-// }
+.logo-mob {
+  @include desktop {
+    display: none;
+  }
+
+  display: block;
+}
+
+.logo {
+  @include min-mobile {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+    
+  @include tablet {
+    display: none;
+  }
+}
 
 .burger-menu {
   fill: $primary-color;
@@ -18,4 +34,21 @@
   outline: none;
   border: none;
   cursor: none;
+}
+
+.select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 16px;
+  color: #555;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #1E90FF;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="UK" xml:lang="uk" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,16 +23,22 @@
     <header class="header">
       <div class="container">
         <nav class="nav-mobile">
-          <div class="logo">
+          <div class="logo-box">
+            <a href="./index.html" class="logo-mob">
+              <img src="./images/logo-min.png" srcset="./images/logo-min@2.png 2x" alt="Logo" />
+            </a>
             <a href="./index.html" class="logo">
-              <!-- <img src="./images/logo100.svg" alt="Logo" /> -->
-              <img
-                src="./images/logo-datcha.png"
-                srcset="./images/logo-datcha@2.png 2x"
-                alt="Logo"
-              />
+              <img src="./images/logo.png" srcset="./images/logo@2.png 2x" alt="Logo" />
             </a>
           </div>
+
+          <div class="lang">
+            <select name="" id="input0" required="required" class="select">
+              <option value="UK">УКР</option>
+              <option value="RU">РУ</option>
+            </select>
+          </div>
+
           <button type="button" class="burger-menu">
             <svg width="48" height="48">
               <use href="./images/icons.svg#icon-burger-menu"></use>
@@ -105,6 +111,71 @@
           </div>
         </div>
       </section>
+
+      <!-- FOTO -->
+      <section class="foto section">
+        <h2 class="title-foto">Фото</h2>
+        <h3 class="subtitle-foto">Загальні</h3>
+
+        <div class="img-slider">
+          <img
+            srcset="/images/414/grill_270.jpg 270w, /images/414/grill@2_270.jpg 540w"
+            sizes="(min-width: 414px) 270px, 100vw"
+            src="./images/414/grill_270.jpg"
+            alt="Мангал"
+          />
+
+          <!-- <img srcset="./images/414/room_270.jpg 270w,
+          ./images/414/room@2_270.jpg 540w"
+          sizes="(min-width: 414px) 270px, 100vw"
+          
+          src="./images/414/room_270.jpg" alt="Кімната"> -->
+
+          <!-- ARROW -->
+          <button>
+            <svg width="42" height="42">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </button>
+        </div>
+
+        
+        <h3 class="subtitle-foto">Кімнати</h3>
+        <div class="img-slider">
+          <!-- <img
+            srcset="/images/414/grill_270.jpg 270w, /images/414/grill@2_270.jpg 540w"
+            sizes="(min-width: 414px) 270px, 100vw"
+            src="./images/414/grill_270.jpg"
+            alt="Мангал"
+          /> -->
+
+          <img srcset="./images/414/room_270.jpg 270w,
+          ./images/414/room@2_270.jpg 540w"
+          sizes="(min-width: 414px) 270px, 100vw"
+          
+          src="./images/414/room_270.jpg" alt="Кімната">
+        </div>
+        
+      </section>
     </main>
+
+    <script defer src="./js/language.js"></script>
   </body>
 </html>
+
+<!-- <select name="" id="input0" required="required" class="select">
+  <option  style="background-image:url(images/lng_ru.png);" value="UK">УКР</option>
+  <option  style="background-image:url(images/lng_eng.png);" value="RU">РУ</option>
+</select>
+
+<script>
+$('#input0').click(function() {
+if($("select#input0 :selected").val() == "rus") {
+  $("select#input0").attr('style', 'background-image:url(images/lng_ru.png);');
+}
+if($("select#input0 :selected").val() == "eng") {
+  $("select#input0").attr('style', 'background-image:url(images/lng_eng.png);');
+}
+  console.log('select color: '+$("select#input0 :selected").val());
+});
+</script> -->

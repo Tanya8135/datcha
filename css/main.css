@@ -119,12 +119,54 @@ address {
   padding: 15px 0;
 }
 
+.logo-mob {
+  display: block;
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .logo-mob {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 413px) {
+  .logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  .logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo {
+    display: none;
+  }
+}
+
 .burger-menu {
   fill: #263e24;
   background-color: transparent;
   outline: none;
   border: none;
   cursor: none;
+}
+
+.select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 16px;
+  color: #555;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #1E90FF;
 }
 
 .hero {
@@ -206,6 +248,24 @@ address {
 }
 .text-about--bottom {
   margin-bottom: 0;
+}
+
+/* для отступов между картинками на tablen & desctop */
+.title-foto {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25);
+  color: #263e24;
+  padding: 0 0 18px 38px;
+}
+
+.subtitle-foto {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #423d1b;
+  padding-left: 84px;
 }
 
 .container {

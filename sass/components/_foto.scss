@@ -1,0 +1,22 @@
+/* для отступов между картинками на tablen & desctop */
+// display: flex;
+// flex-direction: row;
+// justify-content: flex-end;
+// gap: 29px;
+
+.title-foto {
+    @include font(30px, 700);
+
+  letter-spacing: 0.05em;
+  text-shadow: 3px 4px 10px $title-shadow;
+  color: $primary-color;
+  padding: 0 0 18px 38px;
+}
+
+.subtitle-foto {
+  @include font(30px, 500);
+
+  letter-spacing: 0.05em;
+  color: $secondary-color;
+  padding-left: 84px;
+}
