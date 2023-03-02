@@ -1,14 +1,14 @@
 .section {
-  // @include tabletMin {
-  //   padding-bottom: 84px;
-  // }
+  @include tabletMin {
+    padding-bottom: 84px;
+  }
 
-  // padding-bottom: 52px;
+  padding-bottom: 52px;
 
   /* or */
-  padding-top: 52px;
+  // padding-top: 52px;
 
-  @include tabletMin {
-    padding-top: 84px;
-  }
+  // @include tabletMin {
+  //   padding-top: 84px;
+  // }
 }

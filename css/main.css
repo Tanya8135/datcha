@@ -229,7 +229,11 @@ address {
   fill: #cdcab3;
 }
 
-.title-abou {
+.about {
+  padding-top: 52px;
+}
+
+.title-about {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -308,6 +312,16 @@ address {
   right: 10px;
 }
 
+.footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 217, 217, 0.55)), to(rgba(217, 217, 217, 0.55)));
+  background-image: linear-gradient(rgba(217, 217, 217, 0.55), rgba(217, 217, 217, 0.55));
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -330,11 +344,11 @@ address {
 }
 
 .section {
+  padding-bottom: 52px;
   /* or */
-  padding-top: 52px;
 }
 @media screen and (min-width: 768px) {
   .section {
-    padding-top: 84px;
+    padding-bottom: 84px;
   }
 }/*# sourceMappingURL=main.css.map */

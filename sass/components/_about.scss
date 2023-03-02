@@ -1,4 +1,8 @@
-.title-abou {
+.about {
+  padding-top: 52px;
+}
+
+.title-about {
   @include font(30px, 700);
 
   letter-spacing: 0.05em;

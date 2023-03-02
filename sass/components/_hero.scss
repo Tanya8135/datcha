@@ -1,10 +1,10 @@
 .hero {
   max-width: 414px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
     url(../images/alley-fon-414.jpg);
 
   @include retina {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
       url(../images/alley-fon@2-414.jpg);
   }
 
