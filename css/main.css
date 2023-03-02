@@ -251,6 +251,10 @@ address {
 }
 
 /* для отступов между картинками на tablen & desctop */
+.foto {
+  position: relative;
+}
+
 .title-foto {
   font-size: 30px;
   font-weight: 700;
@@ -266,6 +270,42 @@ address {
   letter-spacing: 0.05em;
   color: #423d1b;
   padding-left: 84px;
+}
+
+.common-foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.arrow {
+  padding: 0;
+  fill: #a1a099;
+  background-color: transparent;
+  border: none;
+}
+.arrow__l {
+  position: absolute;
+  top: 310px;
+  left: 10px;
+}
+.arrow__l--rooml {
+  position: absolute;
+  bottom: 130px;
+  left: 10px;
+}
+.arrow__r {
+  position: absolute;
+  top: 310px;
+  right: 10px;
+}
+.arrow__r--roomr {
+  position: absolute;
+  bottom: 130px;
+  right: 10px;
 }
 
 .container {

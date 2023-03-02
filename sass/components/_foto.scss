@@ -4,8 +4,12 @@
 // justify-content: flex-end;
 // gap: 29px;
 
+.foto {
+  position: relative;
+}
+
 .title-foto {
-    @include font(30px, 700);
+  @include font(30px, 700);
 
   letter-spacing: 0.05em;
   text-shadow: 3px 4px 10px $title-shadow;
@@ -19,4 +23,41 @@
   letter-spacing: 0.05em;
   color: $secondary-color;
   padding-left: 84px;
+}
+
+.common-foto {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  padding: 0;
+  fill: $arrow-fill;
+  background-color: transparent;
+  border: none;
+  // cursor: pointer;
+
+  &__l {
+    position: absolute;
+    top: 310px;
+    left: 10px;
+
+    &--rooml {
+      position: absolute;
+      bottom: 130px;
+      left: 10px;
+    }
+  }
+
+  &__r {
+    position: absolute;
+    top: 310px;
+    right: 10px;
+
+    &--roomr {
+      position: absolute;
+      bottom: 130px;
+      right: 10px;
+    }
+  }
 }
