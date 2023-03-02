@@ -119,6 +119,11 @@ address {
   padding: 15px 0;
 }
 
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
 .burger-menu {
   fill: #263e24;
   background-color: transparent;
