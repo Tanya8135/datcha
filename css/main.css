@@ -197,6 +197,12 @@ address {
   text-shadow: 4px 8px 8px #7db67c;
   padding-top: 219px;
 }
+@media screen and (min-width: 320px) and (max-width: 413px) {
+  .title-hero {
+    font-size: 80px;
+    line-height: 1.24;
+  }
+}
 
 .subtitle-hero {
   /* потом связать еще с одни subtitle */
@@ -244,7 +250,6 @@ address {
 }
 
 .text-about {
-  min-width: 317px;
   text-indent: 20px;
   color: #423d1b;
   margin: 0;
@@ -256,10 +261,6 @@ address {
 }
 
 /* для отступов между картинками на tablen & desctop */
-.foto {
-  position: relative;
-}
-
 .title-foto {
   font-size: 30px;
   font-weight: 700;
@@ -287,30 +288,10 @@ address {
   border: none;
 }
 
-.arrow-general-l {
-  position: absolute;
-  top: 310px;
-  left: 10px;
-}
-
-.arrow-general-r {
-  position: absolute;
-  top: 310px;
-  right: 10px;
-}
-
-.arrow-room-l {
-  position: absolute;
-  bottom: 210px;
-  left: 10px;
-  width: 62px;
-}
-
-.arrow-room-r {
-  position: absolute;
-  bottom: 210px;
-  right: 10px;
-  width: 62px;
+.img-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slider {
@@ -327,6 +308,7 @@ address {
 }
 
 .footer {
+  position: relative;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 217, 217, 0.55)), to(rgba(217, 217, 217, 0.55)));
   background-image: linear-gradient(rgba(217, 217, 217, 0.55), rgba(217, 217, 217, 0.55));
   background-repeat: no-repeat;
@@ -366,18 +348,20 @@ address {
   letter-spacing: 0.1em;
 }
 
-.address {
-  position: relative;
-  bottom: 0px;
-  right: -150px;
-  width: 235px;
+.address-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   padding-bottom: 32px;
 }
 
 .map-box {
-  position: absolute;
-  top: 45px;
-  left: -30px;
+  position: relative;
+  top: 35px;
+  left: 0px;
 }
 
 .address-link {

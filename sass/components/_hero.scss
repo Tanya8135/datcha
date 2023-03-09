@@ -16,6 +16,9 @@
 }
 
 .title-hero {
+  @include min-mobile {
+    @include short-font(80px, 1.24);
+  }
   @include short-font(90px, 1.24);
 
   font-family: 'Marck Script', cursive;

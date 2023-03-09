@@ -4,9 +4,9 @@
 // justify-content: flex-end;
 // gap: 29px;
 
-.foto {
-  position: relative;
-}
+// .foto {
+//   position: relative;
+// }
 
 .title-foto {
   @include font(30px, 700);
@@ -37,33 +37,37 @@
   // cursor: pointer;
 }
 
-.arrow-general-l {
-position: absolute;
-top: 310px;
-left: 10px;
+.img-slider {
+  display: flex;
 }
 
-.arrow-general-r {
-position: absolute;
-top: 310px;
-right: 10px;
-}
+// .arrow-general-l {
+// position: relative;
+// bottom: 210px;
+// left: -5px;
+// }
 
-.arrow-room-l {
-  position: absolute;
-  bottom: 210px;
-  left: 10px;
-  width: 62px;
-  // cursor: pointer;
-}
+// .arrow-general-r {
+// position: relative;
+// bottom: 210px;
+// right: -260px;
+// }
 
-.arrow-room-r {
-  position: absolute;
-  bottom: 210px;
-  right: 10px;
-  width: 62px;
-  // cursor: pointer;
-}
+// .arrow-room-l {
+//   position: relative;
+//   bottom: 210px;
+//   left: -5px;
+//   width: 62px;
+//   // cursor: pointer;
+// }
+
+// .arrow-room-r {
+//   position: relative;
+//   bottom: 210px;
+//   right: -260px;
+//   width: 62px;
+//   // cursor: pointer;
+// }
 
 // .common-foto {
 //   display: flex;

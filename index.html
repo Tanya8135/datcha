@@ -136,6 +136,11 @@
           <h3 class="subtitle-foto">Загальні</h3>
 
           <div class="img-slider">
+            <button class="arrow arrow-general-l">
+              <svg width="62" height="62">
+                <use href="./images/icons.svg#icon-arrow-l"></use>
+              </svg>
+            </button>
             <div class="common-foto slider slider-general">
               <img
                 srcset="./images/414/grill_270.jpg 270w, ./images/414/grill@2_270.jpg 540w"
@@ -153,30 +158,21 @@
             </div>
 
             <!-- ARROW -->
-            <button class="arrow arrow-general-l">
-              <svg width="62" height="62">
-                <use href="./images/icons.svg#icon-arrow-l"></use>
-              </svg>
-            </button>
+
             <button class="arrow arrow-general-r">
               <svg width="62" height="62">
                 <use href="./images/icons.svg#icon-arrow-r"></use>
               </svg>
             </button>
-            <!-- <button class="arrow arrow__l arrow__l">
-              <svg width="62" height="62">
-                <use href="./images/icons.svg#icon-arrow-l"></use>
-              </svg>
-            </button>
-            <button class="arrow arrow__r arrow__r">
-              <svg width="62" height="62">
-                <use href="./images/icons.svg#icon-arrow-r"></use>
-              </svg>
-            </button> -->
           </div>
 
           <h3 class="subtitle-foto subtitle-foto--style">Кімнати</h3>
           <div class="img-slider">
+            <button class="arrow arrow-room-l">
+              <svg width="62" height="62">
+                <use href="./images/icons.svg#icon-arrow-l"></use>
+              </svg>
+            </button>
             <div class="common-foto slider slider-room">
               <img
                 srcset="./images/414/grill_270.jpg 270w, ./images/414/grill@2_270.jpg 540w"
@@ -192,11 +188,7 @@
                 alt="Кімната"
               />
             </div>
-            <button class="arrow arrow-room-l">
-              <svg width="62" height="62">
-                <use href="./images/icons.svg#icon-arrow-l"></use>
-              </svg>
-            </button>
+
             <button class="arrow arrow-room-r">
               <svg width="62" height="62">
                 <use href="./images/icons.svg#icon-arrow-r"></use>
@@ -239,20 +231,23 @@
 
         <!-- <b>Адреса</b> -->
         <div class="address">
-          <p class="subtitle-footer"><b>Адреса</b></p>
-          <address>
+          <address class="address-box">
             <div class="map-box">
               <svg width="28" height="31">
                 <use href="./images/icons.svg#icon-map"></use>
               </svg>
             </div>
-            <a
-              class="address-link"
-              href="https://goo.gl/maps/Yw1rKM6HGrmVK9iBA"
-              target="_blank"
-              rel="noopener nofollow noreferrer"
-              >пров. Набережний 5а с. Чкаловка</a
-            >
+            <div class="address-text">
+              <p class="subtitle-footer"><b>Адреса</b></p>
+              <a
+                class="address-link"
+                href="https://goo.gl/maps/Yw1rKM6HGrmVK9iBA"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >пров. Набережний 5а <br />
+                с. Чкаловка</a
+              >
+            </div>
           </address>
         </div>
       </div>
@@ -262,20 +257,3 @@
     <!-- <script defer src="./js/language.js"></script> -->
   </body>
 </html>
-
-<!-- <select name="" id="input0" required="required" class="select">
-  <option  style="background-image:url(images/lng_ru.png);" value="UK">УКР</option>
-  <option  style="background-image:url(images/lng_eng.png);" value="RU">РУ</option>
-</select>
-
-<script>
-$('#input0').click(function() {
-if($("select#input0 :selected").val() == "rus") {
-  $("select#input0").attr('style', 'background-image:url(images/lng_ru.png);');
-}
-if($("select#input0 :selected").val() == "eng") {
-  $("select#input0").attr('style', 'background-image:url(images/lng_eng.png);');
-}
-  console.log('select color: '+$("select#input0 :selected").val());
-});
-</script> -->
