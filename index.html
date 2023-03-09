@@ -14,6 +14,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
     <!-- Styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -119,26 +136,34 @@
           <h3 class="subtitle-foto">Загальні</h3>
 
           <div class="img-slider">
-            <div class="common-foto">
-              <div class="slider">
-                <img
-                  srcset="./images/414/grill_270.jpg 270w, ./images/414/grill@2_270.jpg 540w"
-                  sizes="(min-width: 414px) 270px, 100vw"
-                  src="./images/414/grill_270.jpg"
-                  alt="Мангал"
-                />
+            <div class="common-foto slider slider-general">
+              <img
+                srcset="./images/414/grill_270.jpg 270w, ./images/414/grill@2_270.jpg 540w"
+                sizes="(min-width: 414px) 270px, 100vw"
+                src="./images/414/grill_270.jpg"
+                alt="Мангал"
+              />
 
-                <img
-                  srcset="./images/414/room_270.jpg 270w, ./images/414/room@2_270.jpg 540w"
-                  sizes="(min-width: 414px) 270px, 100vw"
-                  src="./images/414/room_270.jpg"
-                  alt="Кімната"
-                />
-              </div>
+              <img
+                srcset="./images/414/room_270.jpg 270w, ./images/414/room@2_270.jpg 540w"
+                sizes="(min-width: 414px) 270px, 100vw"
+                src="./images/414/room_270.jpg"
+                alt="Кімната"
+              />
             </div>
 
             <!-- ARROW -->
-            <button class="arrow arrow__l arrow__l">
+            <button class="arrow arrow-general-l">
+              <svg width="62" height="62">
+                <use href="./images/icons.svg#icon-arrow-l"></use>
+              </svg>
+            </button>
+            <button class="arrow arrow-general-r">
+              <svg width="62" height="62">
+                <use href="./images/icons.svg#icon-arrow-r"></use>
+              </svg>
+            </button>
+            <!-- <button class="arrow arrow__l arrow__l">
               <svg width="62" height="62">
                 <use href="./images/icons.svg#icon-arrow-l"></use>
               </svg>
@@ -147,34 +172,32 @@
               <svg width="62" height="62">
                 <use href="./images/icons.svg#icon-arrow-r"></use>
               </svg>
-            </button>
+            </button> -->
           </div>
 
           <h3 class="subtitle-foto subtitle-foto--style">Кімнати</h3>
           <div class="img-slider">
-            <div class="common-foto">
-              <div class="slider">
-                <img
-                  srcset="./images/414/grill_270.jpg 270w, ./images/414/grill@2_270.jpg 540w"
-                  sizes="(min-width: 414px) 270px, 100vw"
-                  src="./images/414/grill_270.jpg"
-                  alt="Мангал"
-                />
+            <div class="common-foto slider slider-room">
+              <img
+                srcset="./images/414/grill_270.jpg 270w, ./images/414/grill@2_270.jpg 540w"
+                sizes="(min-width: 414px) 270px, 100vw"
+                src="./images/414/grill_270.jpg"
+                alt="Мангал"
+              />
 
-                <img
-                  srcset="./images/414/room_270.jpg 270w, ./images/414/room@2_270.jpg 540w"
-                  sizes="(min-width: 414px) 270px, 100vw"
-                  src="./images/414/room_270.jpg"
-                  alt="Кімната"
-                />
-              </div>
+              <img
+                srcset="./images/414/room_270.jpg 270w, ./images/414/room@2_270.jpg 540w"
+                sizes="(min-width: 414px) 270px, 100vw"
+                src="./images/414/room_270.jpg"
+                alt="Кімната"
+              />
             </div>
-            <button class="arrow arrow__l--rooml arrow__r">
+            <button class="arrow arrow-room-l">
               <svg width="62" height="62">
                 <use href="./images/icons.svg#icon-arrow-l"></use>
               </svg>
             </button>
-            <button class="arrow arrow__r--roomr arrow__r">
+            <button class="arrow arrow-room-r">
               <svg width="62" height="62">
                 <use href="./images/icons.svg#icon-arrow-r"></use>
               </svg>

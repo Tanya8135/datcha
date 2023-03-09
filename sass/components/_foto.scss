@@ -35,37 +35,41 @@
   background-color: transparent;
   border: none;
   // cursor: pointer;
-
-  &__l {
-    position: absolute;
-    top: 310px;
-    left: 10px;
-
-    &--rooml {
-      position: absolute;
-      bottom: 210px;
-      left: 10px;
-    }
-  }
-
-  &__r {
-    position: absolute;
-    top: 310px;
-    right: 10px;
-
-    &--roomr {
-      position: absolute;
-      bottom: 210px;
-      right: 10px;
-    }
-  }
 }
 
-.common-foto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.arrow-general-l {
+position: absolute;
+top: 310px;
+left: 10px;
 }
+
+.arrow-general-r {
+position: absolute;
+top: 310px;
+right: 10px;
+}
+
+.arrow-room-l {
+  position: absolute;
+  bottom: 210px;
+  left: 10px;
+  width: 62px;
+  // cursor: pointer;
+}
+
+.arrow-room-r {
+  position: absolute;
+  bottom: 210px;
+  right: 10px;
+  width: 62px;
+  // cursor: pointer;
+}
+
+// .common-foto {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
 
 .slider {
   margin: 0 auto;
