@@ -1,4 +1,5 @@
 .footer {
+  // position: relative;
   background-image: linear-gradient($bg-fon-footer, $bg-fon-footer);
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,3 +8,52 @@
   padding-top: 0;
 }
 
+.logo-box-footer {
+  padding-top: 15px;
+}
+
+// .logo-mob-footer {
+//   padding-top: 15px;
+// }
+
+.subtitle-footer {
+  @include font(20px, 600);
+  letter-spacing: 0.05em;
+  padding-bottom: 14px;
+}
+
+.contact-box {
+  padding: 32px 0 52px 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  color: $primary-color;
+}
+
+.contact-link {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+
+
+.address {
+  position: relative;
+  bottom: 0px;
+  right: -150px;
+  width: 235px;
+  padding-bottom: 32px;
+}
+
+.map-box {
+position: absolute;
+top: 45px;
+left: -30px;
+// z-index: -1;
+}
+
+.address-link {
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}

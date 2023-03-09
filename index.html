@@ -120,19 +120,22 @@
 
           <div class="img-slider">
             <div class="common-foto">
-              <img
-                srcset="./images/414/grill_270.jpg 270w, ./images/414/grill@2_270.jpg 540w"
-                sizes="(min-width: 414px) 270px, 100vw"
-                src="./images/414/grill_270.jpg"
-                alt="Мангал"
-              />
-            </div>
+              <div class="slider">
+                <img
+                  srcset="./images/414/grill_270.jpg 270w, ./images/414/grill@2_270.jpg 540w"
+                  sizes="(min-width: 414px) 270px, 100vw"
+                  src="./images/414/grill_270.jpg"
+                  alt="Мангал"
+                />
 
-            <!-- <img srcset="./images/414/room_270.jpg 270w,
-          ./images/414/room@2_270.jpg 540w"
-          sizes="(min-width: 414px) 270px, 100vw"
-          
-          src="./images/414/room_270.jpg" alt="Кімната"> -->
+                <img
+                  srcset="./images/414/room_270.jpg 270w, ./images/414/room@2_270.jpg 540w"
+                  sizes="(min-width: 414px) 270px, 100vw"
+                  src="./images/414/room_270.jpg"
+                  alt="Кімната"
+                />
+              </div>
+            </div>
 
             <!-- ARROW -->
             <button class="arrow arrow__l">
@@ -147,22 +150,24 @@
             </button>
           </div>
 
-          <h3 class="subtitle-foto">Кімнати</h3>
+          <h3 class="subtitle-foto subtitle-foto--style">Кімнати</h3>
           <div class="img-slider">
-            <!-- <img
-            srcset="./images/414/grill_270.jpg 270w, ./images/414/grill@2_270.jpg 540w"
-            sizes="(min-width: 414px) 270px, 100vw"
-            src="./images/414/grill_270.jpg"
-            alt="Мангал"
-          /> -->
-
             <div class="common-foto">
-              <img
-                srcset="./images/414/room_270.jpg 270w, ./images/414/room@2_270.jpg 540w"
-                sizes="(min-width: 414px) 270px, 100vw"
-                src="./images/414/room_270.jpg"
-                alt="Кімната"
-              />
+              <div class="slider">
+                <img
+                  srcset="./images/414/grill_270.jpg 270w, ./images/414/grill@2_270.jpg 540w"
+                  sizes="(min-width: 414px) 270px, 100vw"
+                  src="./images/414/grill_270.jpg"
+                  alt="Мангал"
+                />
+
+                <img
+                  srcset="./images/414/room_270.jpg 270w, ./images/414/room@2_270.jpg 540w"
+                  sizes="(min-width: 414px) 270px, 100vw"
+                  src="./images/414/room_270.jpg"
+                  alt="Кімната"
+                />
+              </div>
             </div>
             <button class="arrow arrow__l--rooml">
               <svg width="62" height="62">
@@ -182,23 +187,56 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
-      <div class="logo-box">
-        <a href="./index.html" class="logo-mob">
-          <img src="./images/logo-min.png" srcset="./images/logo-min@2.png 2x" alt="Logo" />
-        </a>
-        <a href="./index.html" class="logo">
-          <img src="./images/logo.png" srcset="./images/logo@2.png 2x" alt="Logo" />
-        </a>
-      </div>
+        <div class="logo-box-footer">
+          <a href="./index.html" class="logo-mob">
+            <img src="./images/logo-min.png" srcset="./images/logo-min@2.png 2x" alt="Logo" />
+          </a>
+          <a href="./index.html" class="logo">
+            <img src="./images/logo.png" srcset="./images/logo@2.png 2x" alt="Logo" />
+          </a>
+        </div>
 
-      <b class="subtitle-footer">Контакти</b>
+        <div class="contact-box">
+          <p class="subtitle-footer"><b>Контакти</b></p>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <svg width="30" height="32">
+                <use href="./images/icons.svg#icon-mobile"></use>
+              </svg>
+              <a class="contact-link" id="tel:+380675609482" href="tel:+380675609482">0675609482</a>
+            </li>
+            <li class="contact-item">
+              <svg width="30" height="32">
+                <use href="./images/icons.svg#icon-mobile"></use>
+              </svg>
+              <a class="contact-link" id="tel:+380964875185" href="tel:+380964875185">0964875185</a>
+            </li>
+          </ul>
+        </div>
 
-
-      <!-- <b>Адреса</b> -->
+        <!-- <b>Адреса</b> -->
+        <div class="address">
+          <p class="subtitle-footer"><b>Адреса</b></p>
+          <address>
+            <div class="map-box">
+              <svg width="28" height="31">
+                <use href="./images/icons.svg#icon-map"></use>
+              </svg>
+            </div>
+            <a
+              class="address-link"
+              href="https://goo.gl/maps/Yw1rKM6HGrmVK9iBA"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+              >пров. Набережний 5а с. Чкаловка</a
+            >
+          </address>
+        </div>
       </div>
     </footer>
 
-    <script defer src="./js/language.js"></script>
+    <script src="slider.js"></script>
+    <!-- <script defer src="./js/language.js"></script> -->
   </body>
 </html>
 

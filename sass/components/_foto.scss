@@ -22,12 +22,11 @@
 
   letter-spacing: 0.05em;
   color: $secondary-color;
-  padding-left: 84px;
-}
+  padding: 0 0 48px 84px;
 
-.common-foto {
-  display: flex;
-  justify-content: center;
+  &--style {
+    padding-top: 52px;
+  }
 }
 
 .arrow {
@@ -44,7 +43,7 @@
 
     &--rooml {
       position: absolute;
-      bottom: 130px;
+      bottom: 210px;
       left: 10px;
     }
   }
@@ -56,8 +55,27 @@
 
     &--roomr {
       position: absolute;
-      bottom: 130px;
+      bottom: 210px;
       right: 10px;
     }
   }
+}
+
+.common-foto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 270px;
+  height: 388px;
+}
+
+.slider img {
+  float: left;
+  width: 270px;
+  height: 388px;
 }

@@ -100,6 +100,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #263e24;
 }
 
 address {
@@ -273,16 +274,10 @@ address {
   font-weight: 500;
   letter-spacing: 0.05em;
   color: #423d1b;
-  padding-left: 84px;
+  padding: 0 0 48px 84px;
 }
-
-.common-foto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.subtitle-foto--style {
+  padding-top: 52px;
 }
 
 .arrow {
@@ -298,7 +293,7 @@ address {
 }
 .arrow__l--rooml {
   position: absolute;
-  bottom: 130px;
+  bottom: 210px;
   left: 10px;
 }
 .arrow__r {
@@ -308,8 +303,34 @@ address {
 }
 .arrow__r--roomr {
   position: absolute;
-  bottom: 130px;
+  bottom: 210px;
   right: 10px;
+}
+
+.common-foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 270px;
+  height: 388px;
+}
+
+.slider img {
+  float: left;
+  width: 270px;
+  height: 388px;
 }
 
 .footer {
@@ -320,6 +341,55 @@ address {
   margin-right: auto;
   margin-left: auto;
   padding-top: 0;
+}
+
+.logo-box-footer {
+  padding-top: 15px;
+}
+
+.subtitle-footer {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding-bottom: 14px;
+}
+
+.contact-box {
+  padding: 32px 0 52px 0;
+}
+
+.contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #263e24;
+}
+
+.contact-link {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+
+.address {
+  position: relative;
+  bottom: 0px;
+  right: -150px;
+  width: 235px;
+  padding-bottom: 32px;
+}
+
+.map-box {
+  position: absolute;
+  top: 45px;
+  left: -30px;
+}
+
+.address-link {
+  font-size: 20px;
+  letter-spacing: 0.05em;
 }
 
 .container {
