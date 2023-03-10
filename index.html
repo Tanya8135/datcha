@@ -38,7 +38,7 @@
 
   <body>
     <!-- HEADER -->
-    <header class="header">
+    <header class="header page-header">
       <div class="container">
         <nav class="nav-mobile">
           <div class="logo-box">
@@ -57,7 +57,14 @@
             </select>
           </div>
 
-          <button type="button" class="burger-menu">
+          <!-- Burger-menu -->
+          <!-- BTN open входит до div conteiner-->
+          <button
+            type="button"
+            class="burger-menu menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg width="48" height="48">
               <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg>
@@ -67,6 +74,93 @@
             </svg> -->
           </button>
         </nav>
+      </div>
+
+      <!-- BTN close -->
+      <!-- Не входит в container -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            class="close1"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu__box">
+          <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+              <li><a href="index.html" class="mobile-menu__link current-menu">Про нас</a></li>
+              <li><a href="/" class="mobile-menu__link">Фото</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-contacts">
+            <ul class="menu-contacts__list">
+              <li class="menu-contacts__item">
+                <a
+                  href="#tel:+380964875185"
+                  class="menu-contacts__link menu-contacts__link--accent"
+                >
+                  +38 096 487 51 85</a
+                >
+              </li>
+              <li class="menu-contacts__item">
+                <a
+                  href="#tel:+380675609482"
+                  class="menu-contacts__link menu-contacts__link--accent"
+                >
+                  +38 067 560 94 82</a
+                >
+              </li>
+              <li class="menu-contacts__item">
+                <address class="address-bm">
+                  <a
+                    class="address-link-bm"
+                    href="https://goo.gl/maps/Yw1rKM6HGrmVK9iBA"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    >пров. Набережний 5а <br />
+                    с. Чкаловка</a
+                  >
+                </address>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-social">
+            <ul class="menu-social__list">
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link"
+                  >Instagram
+                  <span class="menu-social__border"></span>
+                </a>
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link"
+                  >Telegram
+                  <span class="menu-social__border"></span>
+                </a>
+              </li>
+
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link"
+                  >Facebook
+                  <span class="menu-social__border"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -317,7 +411,16 @@
       </div>
     </footer>
 
+    <!-- SCROLL -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
     <script src="./js/slider.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <!-- <script defer src="./js/language.js"></script> -->
   </body>
 </html>
