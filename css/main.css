@@ -294,6 +294,30 @@ address {
   display: flex;
 }
 
+.arrow-general-l {
+  width: 62px;
+  height: 62px;
+  margin-top: 160px;
+}
+
+.arrow-general-r {
+  width: 62px;
+  height: 62px;
+  margin-top: 160px;
+}
+
+.arrow-room-l {
+  width: 62px;
+  height: 62px;
+  margin-top: 160px;
+}
+
+.arrow-room-r {
+  width: 62px;
+  height: 62px;
+  margin-top: 160px;
+}
+
 .slider {
   margin: 0 auto;
   overflow: hidden;

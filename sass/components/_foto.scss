@@ -41,6 +41,31 @@
   display: flex;
 }
 
+.arrow-general-l {
+  width: 62px;
+  height: 62px;
+  margin-top: 160px;
+
+}
+
+.arrow-general-r {
+  width: 62px;
+  height: 62px;
+  margin-top: 160px;
+}
+
+.arrow-room-l {
+  width: 62px;
+  height: 62px;
+  margin-top: 160px;
+}
+
+.arrow-room-r {
+  width: 62px;
+  height: 62px;
+  margin-top: 160px;
+}
+
 // .arrow-general-l {
 // position: relative;
 // bottom: 210px;
@@ -80,7 +105,7 @@
   overflow: hidden;
   width: 270px;
   height: 388px;
-  border-radius: 10px;
+  border-radius: 10px;  
 }
 
 .slider img {
