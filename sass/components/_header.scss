@@ -22,10 +22,73 @@
   @include mobile {
     display: none;
   }
-    
+
   @include tablet {
     display: none;
   }
+}
+
+.language {
+  padding: 0;
+}
+
+.language-item {
+  position: relative;
+}
+
+.language-item:hover .language-list {
+  display: block;
+}
+
+.language-item:hover .uk {
+  background-color: $bg-selection;
+}
+
+.uk {
+  @include desktop {
+    cursor: pointer;
+  }
+
+  display: block;
+  padding: 10px 20px;
+
+  background-color: $bg-selection;
+  border-radius: 4px;
+  columns: $secondary-color;
+  border: none;
+  outline: none;
+  cursor: none;
+}
+
+.uk:active {
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.language-list {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+  background-color: #f9eea9;
+  border-radius: 4px;
+
+  display: none;
+}
+
+.language-link {
+  @include desktop {
+    cursor: pointer;
+  }
+
+  color: $secondary-color;
+  cursor: none;
+}
+
+.language-choice {
+  padding: 5px 20px;
 }
 
 .burger-menu {
@@ -50,5 +113,5 @@
 
 .select:focus {
   outline: none;
-  border-color: #1E90FF;
+  border-color: #1e90ff;
 }

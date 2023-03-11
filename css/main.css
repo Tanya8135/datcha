@@ -145,6 +145,71 @@ address {
   }
 }
 
+.language {
+  padding: 0;
+}
+
+.language-item {
+  position: relative;
+}
+
+.language-item:hover .language-list {
+  display: block;
+}
+
+.language-item:hover .uk {
+  background-color: #b5a851;
+}
+
+.uk {
+  display: block;
+  padding: 10px 20px;
+  background-color: #b5a851;
+  border-radius: 4px;
+  -webkit-columns: #423d1b;
+     -moz-columns: #423d1b;
+          columns: #423d1b;
+  border: none;
+  outline: none;
+  cursor: none;
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .uk {
+    cursor: pointer;
+  }
+}
+
+.uk:active {
+  -webkit-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.language-list {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f9eea9;
+  border-radius: 4px;
+  display: none;
+}
+
+.language-link {
+  color: #423d1b;
+  cursor: none;
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .language-link {
+    cursor: pointer;
+  }
+}
+
+.language-choice {
+  padding: 5px 20px;
+}
+
 .burger-menu {
   fill: #263e24;
   background-color: transparent;
@@ -167,7 +232,7 @@ address {
 
 .select:focus {
   outline: none;
-  border-color: #1E90FF;
+  border-color: #1e90ff;
 }
 
 .hero {
@@ -366,6 +431,10 @@ address {
       -ms-flex-align: center;
           align-items: center;
   color: #263e24;
+  padding-bottom: 20px;
+}
+.contact-item:last-child {
+  padding-bottom: 0;
 }
 
 .contact-link {
