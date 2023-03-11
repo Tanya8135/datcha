@@ -369,6 +369,12 @@ address {
     text-align: left;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .title-about {
+    font-size: 60px;
+    letter-spacing: 0.05em;
+  }
+}
 
 .text-about {
   font-family: "EB Garamond", serif;
@@ -383,12 +389,22 @@ address {
     text-indent: 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .text-about {
+    font-size: 23px;
+  }
+}
 .text-about--bottom {
   margin-bottom: 0;
 }
 
 .size-about {
   font-size: 18px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .size-about {
+    font-size: 24px;
+  }
 }
 
 /* для отступов между картинками на tablen & desctop */
