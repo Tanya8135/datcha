@@ -277,6 +277,19 @@ address {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/alley-fon@2-414.jpg);
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    max-width: 1024px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/alley-fon-1024.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/alley-fon-1024.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1023px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1023px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/alley-fon@2-1024.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/alley-fon@2-1024.jpg);
+  }
+}
 
 .title-hero {
   font-size: 90px;
@@ -286,6 +299,12 @@ address {
   color: #cdcab3;
   text-shadow: 4px 8px 8px #7db67c;
   padding-top: 219px;
+}
+@media screen and (min-width: 768px) {
+  .title-hero {
+    font-size: 140px;
+    letter-spacing: 0.25em;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 413px) {
   .title-hero {
@@ -303,6 +322,12 @@ address {
   text-align: center;
   color: #cdcab3;
   padding-bottom: 162px;
+}
+@media screen and (min-width: 768px) {
+  .subtitle-hero {
+    font-size: 30px;
+    letter-spacing: 0.15em;
+  }
 }
 
 .social {

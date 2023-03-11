@@ -8,6 +8,17 @@
       url(../images/alley-fon@2-414.jpg);
   }
 
+  @include tablet {
+    max-width: 1024px;
+    background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
+      url(../images/alley-fon-1024.jpg);
+
+    @include retina {
+      background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
+        url(../images/alley-fon@2-1024.jpg);
+    }
+  }
+
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: auto;
@@ -16,6 +27,10 @@
 }
 
 .title-hero {
+  @include tabletMin {
+    @include short-font(140px, 0.25em);
+  }
+
   @include min-mobile {
     @include short-font(80px, 0.15em);
   }
@@ -30,6 +45,10 @@
 
 .subtitle-hero {
   /* потом связать еще с одни subtitle */
+  @include tabletMin {
+    @include short-font(30px, 0.15em)
+  }
+
   @include font(20px, 600, 0.15em);
 
   font-family: 'EB Garamond', serif;
