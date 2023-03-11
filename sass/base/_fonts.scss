@@ -5,66 +5,64 @@
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/marck-script-v16-latin-regular.woff2') format('woff2'),
-       url('../fonts/marck-script-v16-latin-regular.woff') format('woff');
+    url('../fonts/marck-script-v16-latin-regular.woff') format('woff');
 }
 
 /* Roboto Slab */
 @font-face {
-    font-display: swap;
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/roboto-slab-v24-latin-regular.woff2') format('woff2'),
-         url('../fonts/roboto-slab-v24-latin-regular.woff') format('woff');
-  }
-  
-  @font-face {
-    font-display: swap;
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/roboto-slab-v24-latin-600.woff2') format('woff2'),
-         url('../fonts/roboto-slab-v24-latin-600.woff') format('woff');
-  }
-  
-  @font-face {
-    font-display: swap;
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/roboto-slab-v24-latin-700.woff2') format('woff2'),
-         url('../fonts/roboto-slab-v24-latin-700.woff') format('woff');
-  }
+  font-display: swap;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-slab-v24-latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-slab-v24-latin-regular.woff') format('woff');
+}
 
-  /* EB Garamond */
 @font-face {
-    font-display: swap;
-    font-family: 'EB Garamond';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/eb-garamond-v26-latin-regular.woff2') format('woff2'),
-         url('../fonts/eb-garamond-v26-latin-regular.woff') format('woff');
-  }
-  
-  @font-face {
-    font-display: swap;
-    font-family: 'EB Garamond';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/eb-garamond-v26-latin-500.woff2') format('woff2'),
-         url('../fonts/eb-garamond-v26-latin-500.woff') format('woff');
-  }
-  
-  @font-face {
-    font-display: swap;
-    font-family: 'EB Garamond';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/eb-garamond-v26-latin-600.woff2') format('woff2'),
-         url('../fonts/eb-garamond-v26-latin-600.woff') format('woff');
-  }
+  font-display: swap;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-slab-v24-latin-600.woff2') format('woff2'),
+    url('../fonts/roboto-slab-v24-latin-600.woff') format('woff');
+}
 
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-slab-v24-latin-700.woff2') format('woff2'),
+    url('../fonts/roboto-slab-v24-latin-700.woff') format('woff');
+}
 
+/* EB Garamond */
+@font-face {
+  font-display: swap;
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/eb-garamond-v26-latin-regular.woff2') format('woff2'),
+    url('../fonts/eb-garamond-v26-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/eb-garamond-v26-latin-500.woff2') format('woff2'),
+    url('../fonts/eb-garamond-v26-latin-500.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/eb-garamond-v26-latin-600.woff2') format('woff2'),
+    url('../fonts/eb-garamond-v26-latin-600.woff') format('woff');
+}
 
 
 

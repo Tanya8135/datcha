@@ -9,9 +9,15 @@
 // }
 
 .title-foto {
-  @include font(30px, 700);
+  // @include desktop {
+  //   text-align: left;
+  // }
+  
+  @include font(40px, 700);
 
+  font-family: 'EB Garamond', serif;
   letter-spacing: 0.05em;
+  // text-align: center;
   text-shadow: 3px 4px 10px $title-shadow;
   color: $primary-color;
   padding: 0 0 18px 38px;
