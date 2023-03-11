@@ -34,12 +34,13 @@
   }
 }
 
-@mixin short-font($fs, $lh) {
+@mixin short-font($fs, $lp) {
   font-size: $fs;
-  line-height: $lh;
+  letter-spacing: $lp;
 }
 
-@mixin font($fs, $fw) {
+@mixin font($fs, $fw, $ls) {
   font-size: $fs;
   font-weight: $fw;
+  letter-spacing: $ls;
 }

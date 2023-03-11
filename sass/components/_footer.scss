@@ -17,8 +17,7 @@
 // }
 
 .subtitle-footer {
-  @include font(20px, 600);
-  letter-spacing: 0.05em;
+  @include font(20px, 600, 0.05em);
   padding-bottom: 14px;
 }
 

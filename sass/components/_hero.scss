@@ -17,12 +17,11 @@
 
 .title-hero {
   @include min-mobile {
-    @include short-font(80px, 1.24);
+    @include short-font(80px, 0.15em);
   }
-  @include short-font(90px, 1.24);
+  @include short-font(90px, 00.15em);
 
   font-family: 'Marck Script', cursive;
-  letter-spacing: 0.15em;
   text-align: center;
   color: $accent-color;
   text-shadow: 4px 8px 8px $accent-shadow;
@@ -31,10 +30,9 @@
 
 .subtitle-hero {
   /* потом связать еще с одни subtitle */
-  @include font(20px, 600);
+  @include font(20px, 600, 0.15em);
 
   font-family: 'EB Garamond', serif;
-  letter-spacing: 0.15em;
   text-align: center;
   color: $accent-color;
   padding-bottom: 162px;

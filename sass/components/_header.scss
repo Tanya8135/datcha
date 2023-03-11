@@ -28,6 +28,24 @@
   }
 }
 
+.nav-site {
+  display: flex;
+}
+
+.nav-site-item {
+  margin-right: 68px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav-site-link {
+  @include font(20px, 600, 00.03em);
+
+  padding: 0 20px;
+}
+
 .language {
   padding: 0;
 }
@@ -93,6 +111,10 @@
 }
 
 .burger-menu {
+  @include tabletMin {
+    display: none;
+  }
+
   fill: $primary-color;
   background-color: transparent;
   outline: none;

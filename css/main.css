@@ -145,6 +145,26 @@ address {
   }
 }
 
+.nav-site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-site-item {
+  margin-right: 68px;
+}
+.nav-site-item:last-child {
+  margin-right: 0;
+}
+
+.nav-site-link {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0 20px;
+}
+
 .language {
   padding: 0;
 }
@@ -218,6 +238,11 @@ address {
   border: none;
   cursor: none;
 }
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+}
 
 .select {
   background-color: #fff;
@@ -255,9 +280,8 @@ address {
 
 .title-hero {
   font-size: 90px;
-  line-height: 1.24;
-  font-family: "Marck Script", cursive;
   letter-spacing: 0.15em;
+  font-family: "Marck Script", cursive;
   text-align: center;
   color: #cdcab3;
   text-shadow: 4px 8px 8px #7db67c;
@@ -266,7 +290,7 @@ address {
 @media screen and (min-width: 320px) and (max-width: 413px) {
   .title-hero {
     font-size: 80px;
-    line-height: 1.24;
+    letter-spacing: 0.15em;
   }
 }
 
@@ -274,8 +298,8 @@ address {
   /* потом связать еще с одни subtitle */
   font-size: 20px;
   font-weight: 600;
-  font-family: "EB Garamond", serif;
   letter-spacing: 0.15em;
+  font-family: "EB Garamond", serif;
   text-align: center;
   color: #cdcab3;
   padding-bottom: 162px;
@@ -346,8 +370,8 @@ address {
 .title-foto {
   font-size: 40px;
   font-weight: 700;
-  font-family: "EB Garamond", serif;
   letter-spacing: 0.05em;
+  font-family: "EB Garamond", serif;
   text-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25);
   color: #263e24;
   padding: 0 0 18px 38px;
@@ -507,6 +531,11 @@ address {
       justify-content: space-around;
   min-height: 100%;
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu__box {
+    display: none;
+  }
+}
 
 .menu-toggle {
   min-height: 38px;
@@ -552,6 +581,11 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
 
 .menu-container.is-open {
   -webkit-transform: translateX(0);
@@ -586,10 +620,10 @@ address {
 .mobile-menu__link {
   font-size: 45px;
   font-weight: 700;
+  letter-spacing: 0.02em;
   display: block;
   padding: 10px;
   color: #423d1b;
-  letter-spacing: 0.02em;
   text-decoration: none;
 }
 @media screen and (min-width: 414px) and (max-width: 767px) {
@@ -619,6 +653,7 @@ address {
 .menu-contacts__link {
   font-size: 28px;
   font-weight: 500;
+  letter-spacing: 0.01em;
   color: #423d1b;
   text-decoration: none;
 }
@@ -626,6 +661,7 @@ address {
   .menu-contacts__link {
     font-size: 24px;
     font-weight: 500;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -651,6 +687,7 @@ address {
   .address-link-bm {
     font-size: 25px;
     font-weight: 600;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -674,6 +711,7 @@ address {
 .menu-social__link {
   font-size: 12px;
   font-weight: 500;
+  letter-spacing: 0.01em;
   color: #423d1b;
   text-decoration: none;
 }
@@ -681,6 +719,7 @@ address {
   .menu-social__link {
     font-size: 18px;
     font-weight: 500;
+    letter-spacing: 0.01em;
   }
 }
 
