@@ -113,6 +113,10 @@
 // }
 
 .slider {
+  @include tablet {
+    width: 590px;
+  }
+
   margin: 0 auto;
   overflow: hidden;
   width: 270px;
