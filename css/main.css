@@ -162,7 +162,7 @@ address {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.03em;
-  padding: 0 20px;
+  padding: 20px 0;
 }
 
 .language {
