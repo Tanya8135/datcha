@@ -146,9 +146,14 @@ address {
 }
 
 .nav-site {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-site {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .nav-site-item {
@@ -373,6 +378,7 @@ address {
   .title-about {
     font-size: 60px;
     letter-spacing: 0.05em;
+    padding: 0 0 44px 38px;
   }
 }
 
@@ -415,13 +421,13 @@ address {
   font-family: "EB Garamond", serif;
   text-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25);
   color: #263e24;
-  padding: 0 0 18px 38px;
+  padding: 0 0 16px 38px;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .title-foto {
     font-size: 60px;
     letter-spacing: 0.05em;
-    padding: 0 0 52px 138px;
+    padding: 0 0 20px 138px;
   }
 }
 

@@ -15,7 +15,7 @@
 
   @include tablet {
     @include short-font(60px, 0.05em);
-    padding: 0 0 52px 138px;
+    padding: 0 0 20px 138px;
   }
   
   @include font(40px, 700, 0.05em);
@@ -23,7 +23,7 @@
   font-family: 'EB Garamond', serif;
   text-shadow: 3px 4px 10px $title-shadow;
   color: $primary-color;
-  padding: 0 0 18px 38px;
+  padding: 0 0 16px 38px;
 }
 
 .subtitle-foto {

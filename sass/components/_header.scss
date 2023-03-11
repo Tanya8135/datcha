@@ -29,7 +29,11 @@
 }
 
 .nav-site {
-  display: flex;
+  @include tablet {
+     display: flex;
+  }
+ 
+  display: none;
 }
 
 .nav-site-item {

@@ -9,6 +9,7 @@
 
   @include tablet {
     @include short-font(60px, 0.05em);
+    padding: 0 0 44px 38px;
   }
 
   @include font(40px, 700, 0.05em);
