@@ -1,9 +1,9 @@
 .page-header .conteiner {
-    // min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  // min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .mobile-menu__box {
   // position: relative;
@@ -23,14 +23,14 @@
     display: none;
   }
 
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-height: 38px;
+  min-width: 38px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
   margin: 0;
-  padding: 0;
+  padding: 10px 10px 0 0;
   fill: $secondary-color;
   background-color: transparent;
   cursor: none;
@@ -75,6 +75,10 @@
 }
 
 .mobile-menu__list {
+  @include min-mobile {
+    transform: translateY(-20px);
+  }
+
   padding: 0;
   margin: 0;
   list-style: none;
@@ -82,11 +86,11 @@
 
 .mobile-menu__link {
   @include mobile {
-    @include font(40px, 700);
+    @include font(35px, 700);
     letter-spacing: 0.02em;
   }
 
-  @include font(50px, 700);
+  @include font(45px, 700);
 
   display: block;
   padding: 10px;
@@ -130,14 +134,24 @@
   // }  /* оставила для примера код accent */
 }
 
-.address-bm {
-    padding-top: 24px;
+.address-bm-box {
+  display: flex;
+  padding-top: 24px;
+}
+
+.map-bm {
+  padding: 10px 10px 30px 0;
+  transform: translateX(-5px);
 }
 
 .address-link-bm {
-    @include font(23px, 600);
+  @include mobile {
+    @include font(25px, 600);
+  }
 
-    letter-spacing: 0.03em;
+  @include font(22px, 600);
+
+  letter-spacing: 0.03em;
 }
 
 .menu-social {

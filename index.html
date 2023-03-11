@@ -80,7 +80,10 @@
       <!-- Не входит в container -->
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-          <svg
+          <svg width="38" height="38">
+            <use href="./images/icons.svg#icon-btn-close"></use>
+          </svg>
+          <!-- <svg
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -92,7 +95,7 @@
               d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
               clip-rule="evenodd"
             ></path>
-          </svg>
+          </svg> -->
         </button>
 
         <!-- Mobile menu -->
@@ -108,7 +111,8 @@
             <ul class="menu-contacts__list">
               <li class="menu-contacts__item">
                 <a
-                  href="#tel:+380964875185"
+                  id="tel:+380964875185"
+                  href="tel:+380964875185"
                   class="menu-contacts__link menu-contacts__link--accent"
                 >
                   +38 096 487 51 85</a
@@ -116,22 +120,36 @@
               </li>
               <li class="menu-contacts__item">
                 <a
-                  href="#tel:+380675609482"
+                  id="tel:+380675609482"
+                  href="tel:+380675609482"
                   class="menu-contacts__link menu-contacts__link--accent"
                 >
                   +38 067 560 94 82</a
                 >
               </li>
               <li class="menu-contacts__item">
-                <address class="address-bm">
-                  <a
-                    class="address-link-bm"
-                    href="https://goo.gl/maps/Yw1rKM6HGrmVK9iBA"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                    >пров. Набережний 5а <br />
-                    с. Чкаловка</a
-                  >
+                <address class="address-bm-box">
+                  <div class="map-bm">
+                    <a
+                      href="https://goo.gl/maps/Yw1rKM6HGrmVK9iBA"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                    >
+                      <svg width="35" height="38">
+                        <use href="./images/icons.svg#icon-map"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="address-bm">
+                    <a
+                      class="address-link-bm"
+                      href="https://goo.gl/maps/Yw1rKM6HGrmVK9iBA"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      >пров. Набережний 5а <br />
+                      с. Чкаловка</a
+                    >
+                  </div>
                 </address>
               </li>
             </ul>
@@ -391,9 +409,15 @@
         <div class="address">
           <address class="address-box">
             <div class="map-box">
-              <svg width="28" height="31">
-                <use href="./images/icons.svg#icon-map"></use>
-              </svg>
+              <a
+                href="https://goo.gl/maps/Yw1rKM6HGrmVK9iBA"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+              >
+                <svg width="28" height="31">
+                  <use href="./images/icons.svg#icon-map"></use>
+                </svg>
+              </a>
             </div>
             <div class="address-text">
               <p class="subtitle-footer"><b>Адреса</b></p>
@@ -412,6 +436,7 @@
     </footer>
 
     <!-- SCROLL -->
+    <!-- чтобы не прокручивалась модалка -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
