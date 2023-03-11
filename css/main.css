@@ -493,7 +493,6 @@ address {
 }
 
 .footer {
-  position: relative;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 217, 217, 0.55)), to(rgba(217, 217, 217, 0.55)));
   background-image: linear-gradient(rgba(217, 217, 217, 0.55), rgba(217, 217, 217, 0.55));
   background-repeat: no-repeat;
@@ -503,8 +502,27 @@ address {
   padding-top: 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .logo-box-footer {
   padding-top: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo-box-footer {
+    padding: 114px 0 115px;
+  }
 }
 
 .subtitle-footer {
@@ -545,6 +563,14 @@ address {
       -ms-flex-pack: end;
           justify-content: end;
   padding-bottom: 32px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .address-box {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding: 5px 0 52px 0;
+  }
 }
 
 .map-box {

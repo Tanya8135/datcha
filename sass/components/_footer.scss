@@ -1,5 +1,4 @@
 .footer {
-  position: relative;
   background-image: linear-gradient($bg-fon-footer, $bg-fon-footer);
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,7 +7,19 @@
   padding-top: 0;
 }
 
+.footer-box {
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .logo-box-footer {
+  @include tablet {
+padding: 114px 0 115px;
+  }
+
   padding-top: 15px;
 }
 
@@ -37,12 +48,15 @@
 }
 
 .contact-link {
-  font-size: 20px;
-  letter-spacing: 0.1em;
+  @include short-font(20px, 0.1em);
 }
 
 .address-box {
-  // position: relative;
+  @include tablet {
+    justify-content: start;
+    padding: 5px 0 52px 0;
+  }
+  
   display: flex;
   justify-content: end;
   padding-bottom: 32px;
