@@ -123,7 +123,7 @@ address {
 .logo-mob {
   display: block;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .logo-mob {
     display: none;
   }
@@ -144,7 +144,7 @@ address {
     display: none;
   }
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .logo {
     display: block;
   }
@@ -174,7 +174,12 @@ address {
   letter-spacing: 0.03em;
   padding: 20px 0;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .nav-site-link {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .nav-site-link {
     font-size: 24px;
   }
@@ -209,9 +214,15 @@ address {
   outline: none;
   cursor: none;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .uk {
+    font-size: 24px;
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .uk {
+    font-size: 20px;
   }
 }
 
@@ -236,7 +247,7 @@ address {
   color: #423d1b;
   cursor: none;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .language-link {
     cursor: pointer;
   }
@@ -276,8 +287,159 @@ address {
   border-color: #1e90ff;
 }
 
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+  outline: none;
+}
+
+.row {
+  display: table-row;
+}
+
+.toggle-button-cover {
+  display: table-cell;
+  position: relative;
+  width: 200px;
+  height: 140px;
+}
+
+.button-cover {
+  height: 100px;
+  margin: 20px;
+  background-color: transparent;
+}
+
+.button-cover:before {
+  counter-increment: button-counter;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px;
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 94px;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 100px;
+}
+
+.button.b2 {
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #E2D570;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+#button-9 .knobs:before,
+#button-9 .knobs:after,
+#button-9 .knobs span {
+  position: absolute;
+  top: 2.5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  border-radius: 50%;
+  -webkit-transition: 0.4s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+  transition: 0.4s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-9 .knobs:before {
+  content: "УКР";
+  top: -1px;
+  left: 34px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#button-9 .knobs:after {
+  content: "РУС";
+  top: -1px;
+  right: -24px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#button-9 .knobs:before,
+#button-9 .knobs:after {
+  color: #263e24;
+  z-index: 2;
+}
+
+#button-9 .knobs span {
+  left: 4px;
+  background-color: #B6A949;
+  z-index: 1;
+}
+
+#button-9 .checkbox:checked + .knobs:before {
+  left: -54px;
+}
+
+#button-9 .checkbox:checked + .knobs:after {
+  right: 54px;
+}
+
+#button-9 .checkbox:checked + .knobs span {
+  left: 60px;
+  background-color: #54E0FF;
+}
+
+#button-9 .checkbox:checked ~ .layer {
+  background-color: #FBFF2D;
+}
+
 .hero {
-  max-width: 414px;
+  max-width: 1024px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/alley-fon-414.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/alley-fon-414.jpg);
   background-repeat: no-repeat;
@@ -294,7 +456,6 @@ address {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 1024px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/alley-fon-1024.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/alley-fon-1024.jpg);
   }
@@ -305,14 +466,14 @@ address {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/alley-fon@2-1024.jpg);
   }
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .hero {
     max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/alley-fon-1180.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/alley-fon-1180.jpg);
   }
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) and (min-device-pixel-ratio: 2), screen and (min-width: 1180px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1180px) and (max-width: 1920px) and (min-resolution: 192dpi), screen and (min-width: 1180px) and (max-width: 1920px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (max-width: 1920px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (max-width: 1920px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/alley-fon@2-1180.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/alley-fon@2-1180.jpg);
@@ -328,7 +489,7 @@ address {
   text-shadow: 4px 8px 8px #7db67c;
   padding-top: 219px;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .title-hero {
     font-size: 190px;
   }
@@ -356,7 +517,7 @@ address {
   color: #cdcab3;
   padding-bottom: 162px;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .subtitle-hero {
     font-size: 40px;
   }
@@ -392,7 +553,7 @@ address {
 .about {
   padding-top: 52px;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .about {
     padding-top: 92px;
   }
@@ -407,7 +568,7 @@ address {
   color: #263e24;
   padding: 0 0 18px 38px;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .title-about {
     font-size: 70px;
     padding: 0 0 52px 38px;
@@ -429,7 +590,7 @@ address {
   margin-bottom: 15px;
   padding: 0 5px 0 15px;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .text-about {
     font-size: 28px;
   }
@@ -453,7 +614,7 @@ address {
 }
 
 /* для отступов между картинками на tablen & desctop */
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .foto {
     margin-bottom: 56px;
   }
@@ -468,7 +629,12 @@ address {
   color: #263e24;
   padding: 0 0 16px 38px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .title-foto {
+    font-size: 70px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .title-foto {
     font-size: 60px;
     letter-spacing: 0.05em;
@@ -501,7 +667,7 @@ address {
   height: 62px;
 }
 
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .arrow-desk {
     padding: 0;
     fill: #a1a099;
@@ -513,13 +679,13 @@ address {
   }
 }
 
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .arrow-mob-tab-l {
     display: none;
   }
 }
 
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .arrow-mob-tab-r {
     display: none;
   }
@@ -528,7 +694,7 @@ address {
 .arrow-desk-l {
   display: none;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .arrow-desk-l {
     display: block;
   }
@@ -537,7 +703,7 @@ address {
 .arrow-desk-r {
   display: none;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .arrow-desk-r {
     display: block;
   }
@@ -559,7 +725,7 @@ address {
 .arrow-general-l {
   margin-top: 160px;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .arrow-general-l {
     margin-right: 20px;
   }
@@ -573,7 +739,7 @@ address {
 .arrow-general-r {
   margin-top: 160px;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .arrow-general-r {
     margin-left: 20px;
   }
@@ -587,7 +753,7 @@ address {
 .arrow-room-l {
   margin-top: 160px;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .arrow-room-l {
     margin-right: 20px;
   }
@@ -601,7 +767,7 @@ address {
 .arrow-room-r {
   margin-top: 160px;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .arrow-room-r {
     margin-left: 20px;
   }
@@ -619,7 +785,7 @@ address {
   height: 388px;
   border-radius: 10px;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .slider {
     margin: 0;
     width: 700px;
@@ -677,7 +843,7 @@ address {
   letter-spacing: 0.05em;
   padding-bottom: 14px;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .subtitle-footer {
     font-size: 24px;
   }
@@ -705,7 +871,7 @@ address {
   font-size: 20px;
   letter-spacing: 0.05em;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .contact-link {
     font-size: 24px;
   }
@@ -734,7 +900,7 @@ address {
   top: 35px;
   left: 0px;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .map-box {
     top: 45px;
     left: 0;
@@ -746,7 +912,7 @@ address {
   font-size: 20px;
   letter-spacing: 0.05em;
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .address-link {
     font-size: 24px;
   }
@@ -802,7 +968,7 @@ address {
     display: none;
   }
 }
-@media screen and (min-width: 1180px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .menu-toggle {
     display: none;
   }

@@ -1,5 +1,6 @@
 .hero {
-  max-width: 414px;
+  // max-width: 414px;
+  max-width: 1024px;
   background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
     url(../images/alley-fon-414.jpg);
 
@@ -9,7 +10,7 @@
   }
 
   @include tabletMin {
-    max-width: 1024px;
+    // max-width: 1024px;
     background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
       url(../images/alley-fon-1024.jpg);
 

@@ -11,7 +11,11 @@
 }
 
 .title-foto {
-  @include tabletMin {
+  @include desktop {
+font-size: 70px
+  }
+
+  @include tablet {
     @include short-font(60px, 0.05em);
     padding: 0 0 20px 138px;
   }
