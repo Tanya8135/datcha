@@ -731,9 +731,7 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  padding-top: 50px;
   padding-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
@@ -772,11 +770,8 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-transform: translate(1px, -170px);
-          transform: translate(1px, -170px);
+  -webkit-transform: translate(1px, -190px);
+          transform: translate(1px, -190px);
 }
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
   .social-box {
