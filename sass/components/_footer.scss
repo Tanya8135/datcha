@@ -37,7 +37,7 @@
 }
 
 .contact-box {
-  padding: 32px 0 52px 0;
+  padding: 32px 0 32px 0;
 }
 
 .contact-item {
@@ -67,7 +67,6 @@
 
   display: flex;
   // justify-content: end;
-  padding-top: 50px;
   padding-bottom: 32px;
 }
 
@@ -92,23 +91,18 @@
 }
 
 .social-box {
-  @include desktop {
-    transform: translate(-47px, -130px);
-  }
-
-  @include tablet {
+  @include tabletMin {
+    justify-content: end;
     transform: translate(-5px, -120px);
   }
 
-  @include mobile {
-    transform: translate(1px, -250px);
+  @include desktop {
+    transform: translate(-44px, -130px);
   }
 
   display: flex;
-  // justify-content: end;
-  // transform: translate(1px, -170px);
-  transform: translate(1px, -190px);
-
+  padding-bottom: 32px;
+  transform: translateX(7px);
 }
 
 .icon-color-footer {

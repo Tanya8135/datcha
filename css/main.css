@@ -700,7 +700,7 @@ address {
 }
 
 .contact-box {
-  padding: 32px 0 52px 0;
+  padding: 32px 0 32px 0;
 }
 
 .contact-item {
@@ -731,7 +731,6 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 50px;
   padding-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
@@ -770,30 +769,28 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: translate(1px, -190px);
-          transform: translate(1px, -190px);
+  padding-bottom: 32px;
+  -webkit-transform: translateX(7px);
+          transform: translateX(7px);
 }
-@media screen and (min-width: 1024px) and (max-width: 1920px) {
+@media screen and (min-width: 768px) {
   .social-box {
-    -webkit-transform: translate(-47px, -130px);
-            transform: translate(-47px, -130px);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .social-box {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     -webkit-transform: translate(-5px, -120px);
             transform: translate(-5px, -120px);
   }
 }
-@media screen and (min-width: 414px) and (max-width: 767px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .social-box {
-    -webkit-transform: translate(1px, -250px);
-            transform: translate(1px, -250px);
+    -webkit-transform: translate(-44px, -130px);
+            transform: translate(-44px, -130px);
   }
 }
 
 .icon-color-footer {
-  fill: #b6a949;
+  fill: #737373;
 }
 
 .page-header .conteiner {
