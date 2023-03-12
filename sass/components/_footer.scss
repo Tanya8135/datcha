@@ -17,7 +17,7 @@
 
 .logo-box-footer {
   @include tabletMin {
-padding: 114px 0 115px;
+    padding: 114px 0 115px;
   }
 
   padding-top: 15px;
@@ -53,7 +53,7 @@ padding: 114px 0 115px;
 
 .contact-link {
   @include desktop {
-    font-size:  24px;
+    font-size: 24px;
   }
 
   @include short-font(20px, 0.05em);
@@ -64,7 +64,7 @@ padding: 114px 0 115px;
     justify-content: start;
     padding: 5px 0 52px 0;
   }
-  
+
   display: flex;
   justify-content: end;
   padding-bottom: 32px;
@@ -88,4 +88,26 @@ padding: 114px 0 115px;
   }
 
   @include short-font(20px, 0.05em);
+}
+
+.social-box {
+  @include desktop {
+    transform: translate(-47px, -130px);
+  }
+
+  @include tablet {
+    transform: translate(-5px, -120px);
+  }
+
+  @include mobile {
+    transform: translate(1px, -250px);
+  }
+
+  display: flex;
+  justify-content: end;
+  transform: translate(1px, -170px);
+}
+
+.icon-color-footer {
+  fill: $icon-social-footer;
 }

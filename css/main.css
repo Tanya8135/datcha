@@ -199,14 +199,14 @@ address {
 }
 
 .language-item:hover .uk {
-  background-color: #E2D570;
+  background-color: #e2d570;
 }
 
 .uk {
   display: block;
   padding: 10px 20px;
   color: #263e24;
-  background-color: #E2D570;
+  background-color: #e2d570;
   border-radius: 4px;
   -webkit-columns: #423d1b;
      -moz-columns: #423d1b;
@@ -768,6 +768,39 @@ address {
   }
 }
 
+.social-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-transform: translate(1px, -170px);
+          transform: translate(1px, -170px);
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .social-box {
+    -webkit-transform: translate(-47px, -130px);
+            transform: translate(-47px, -130px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .social-box {
+    -webkit-transform: translate(-5px, -120px);
+            transform: translate(-5px, -120px);
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  .social-box {
+    -webkit-transform: translate(1px, -250px);
+            transform: translate(1px, -250px);
+  }
+}
+
+.icon-color-footer {
+  fill: #b6a949;
+}
+
 .page-header .conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -835,7 +868,7 @@ address {
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #FFFBDD;
+  background-color: #fffbdd;
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
