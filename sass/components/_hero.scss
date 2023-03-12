@@ -8,7 +8,7 @@
       url(../images/alley-fon@2-414.jpg);
   }
 
-  @include tablet {
+  @include tabletMin {
     max-width: 1024px;
     background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
       url(../images/alley-fon-1024.jpg);
@@ -16,6 +16,17 @@
     @include retina {
       background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
         url(../images/alley-fon@2-1024.jpg);
+    }
+  }
+
+  @include desktop {
+    max-width: 1600px;
+    background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
+      url(../images/alley-fon-1180.jpg);
+
+    @include retina {
+      background-image: linear-gradient($bg-fon-transparent, $bg-fon-transparent),
+        url(../images/alley-fon@2-1180.jpg);
     }
   }
 
@@ -27,7 +38,11 @@
 }
 
 .title-hero {
-  @include tabletMin {
+  @include desktop {
+    font-size: 190px;
+  }
+
+  @include tablet {
     @include short-font(140px, 0.25em);
   }
 
@@ -45,8 +60,12 @@
 
 .subtitle-hero {
   /* потом связать еще с одни subtitle */
-  @include tabletMin {
-    @include short-font(30px, 0.15em)
+  @include desktop {
+    font-size: 40px
+  }
+
+  @include tablet {
+    @include short-font(30px, 0.15em);
   }
 
   @include font(20px, 600, 0.15em);

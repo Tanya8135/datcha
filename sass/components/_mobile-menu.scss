@@ -19,7 +19,7 @@
 }
 
 .menu-toggle {
-  @include tablet {
+  @include tabletMin {
     display: none;
   }
 

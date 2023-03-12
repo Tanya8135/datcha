@@ -1,10 +1,14 @@
 .about {
+  @include desktop {
+    padding-top: 92px;
+  }
   padding-top: 52px;
 }
 
 .title-about {
   @include desktop {
-    text-align: left;
+    font-size: 70px;
+    padding: 0 0 52px 38px;
   }
 
   @include tablet {
@@ -22,7 +26,7 @@
 
 .text-about {
   @include desktop {
-    text-indent: 20px;
+    font-size: 28px;
   }
 
   @include tablet {
@@ -42,7 +46,7 @@
 }
 
 .size-about {
-  @include tablet {
+  @include tabletMin {
     font-size: 24px;
   }
 

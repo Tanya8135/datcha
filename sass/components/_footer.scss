@@ -8,7 +8,7 @@
 }
 
 .footer-box {
-  @include tablet {
+  @include tabletMin {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,7 +16,7 @@
 }
 
 .logo-box-footer {
-  @include tablet {
+  @include tabletMin {
 padding: 114px 0 115px;
   }
 
@@ -28,6 +28,10 @@ padding: 114px 0 115px;
 // }
 
 .subtitle-footer {
+  @include desktop {
+    font-size: 24px;
+  }
+
   @include font(20px, 600, 0.05em);
   padding-bottom: 14px;
 }
@@ -48,11 +52,15 @@ padding: 114px 0 115px;
 }
 
 .contact-link {
-  @include short-font(20px, 0.1em);
+  @include desktop {
+    font-size:  24px;
+  }
+
+  @include short-font(20px, 0.05em);
 }
 
 .address-box {
-  @include tablet {
+  @include tabletMin {
     justify-content: start;
     padding: 5px 0 52px 0;
   }
@@ -63,12 +71,21 @@ padding: 114px 0 115px;
 }
 
 .map-box {
+  @include desktop {
+    top: 45px;
+    left: 0;
+    margin-right: 5px;
+  }
+
   position: relative;
   top: 35px;
   left: 0px;
 }
 
 .address-link {
-  font-size: 20px;
-  letter-spacing: 0.05em;
+  @include desktop {
+    font-size: 24px;
+  }
+
+  @include short-font(20px, 0.05em);
 }
