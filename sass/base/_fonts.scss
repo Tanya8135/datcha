@@ -4,7 +4,7 @@
   font-family: 'Marck Script';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/marck-script-v16-latin-regular.woff2') format('woff2'),
+  src: local('Montserrat') url('../fonts/marck-script-v16-latin-regular.woff2') format('woff2'),
     url('../fonts/marck-script-v16-latin-regular.woff') format('woff');
 }
 
@@ -14,7 +14,7 @@
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-slab-v24-latin-regular.woff2') format('woff2'),
+  src: local('Montserrat') url('../fonts/roboto-slab-v24-latin-regular.woff2') format('woff2'),
     url('../fonts/roboto-slab-v24-latin-regular.woff') format('woff');
 }
 
@@ -23,7 +23,7 @@
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/roboto-slab-v24-latin-600.woff2') format('woff2'),
+  src: local('Montserrat') url('../fonts/roboto-slab-v24-latin-600.woff2') format('woff2'),
     url('../fonts/roboto-slab-v24-latin-600.woff') format('woff');
 }
 
@@ -32,7 +32,7 @@
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/roboto-slab-v24-latin-700.woff2') format('woff2'),
+  src: local('Montserrat') url('../fonts/roboto-slab-v24-latin-700.woff2') format('woff2'),
     url('../fonts/roboto-slab-v24-latin-700.woff') format('woff');
 }
 
@@ -42,7 +42,7 @@
   font-family: 'EB Garamond';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/eb-garamond-v26-latin-regular.woff2') format('woff2'),
+  src: local('Montserrat') url('../fonts/eb-garamond-v26-latin-regular.woff2') format('woff2'),
     url('../fonts/eb-garamond-v26-latin-regular.woff') format('woff');
 }
 
@@ -51,7 +51,7 @@
   font-family: 'EB Garamond';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/eb-garamond-v26-latin-500.woff2') format('woff2'),
+  src: local('Montserrat') url('../fonts/eb-garamond-v26-latin-500.woff2') format('woff2'),
     url('../fonts/eb-garamond-v26-latin-500.woff') format('woff');
 }
 
@@ -60,7 +60,7 @@
   font-family: 'EB Garamond';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/eb-garamond-v26-latin-600.woff2') format('woff2'),
+  src: local('Montserrat') url('../fonts/eb-garamond-v26-latin-600.woff2') format('woff2'),
     url('../fonts/eb-garamond-v26-latin-600.woff') format('woff');
 }
 
