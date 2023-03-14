@@ -2,7 +2,7 @@
   // min-height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 .mobile-menu__box {
@@ -14,7 +14,8 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  justify-content: space-around;
+  // justify-content: space-around;
+  padding-top: 30px;
   min-height: 100%;
 }
 
@@ -78,31 +79,46 @@
   color: #fff;
 }
 
+.price-bm-title {
+  @include short-font(30px, 0.05em);
+  padding-bottom: 12px;
+}
+
 .mobile-menu {
   display: flex;
-}
 
-.mobile-menu__list {
-  @include min-mobile {
-    transform: translateY(-20px);
+  &__list {
+    padding: 0;
+    margin: 0;
   }
 
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+  &__item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 16px;
 
-.mobile-menu__link {
-  @include mobile {
-    @include font(35px, 700, 0.02em);
+    &:last-of-type {
+      margin-bottom: 32px;
+    }
   }
 
-  @include font(45px, 700, 0.02em);
+  &__text {
+    @include short-font(18px, 0.01em);
+    width: 203px;
+  }
 
-  display: block;
-  padding: 10px;
-  color: $secondary-color;
-  text-decoration: none;
+  &__prise {
+    transform: translateY(5px);
+    margin-left: 50px;
+  }
+
+  &__item-descr {
+    @include short-font(18px, 0.01em);
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
 }
 
 //   .current-menu {
@@ -121,12 +137,17 @@
 }
 
 .menu-contacts__item {
-  display: block;
-  padding: 10px;
+  display: inline-flex;
+  // padding: 10px;
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .menu-contacts__link {
-  @include font(28px, 500, 0.01em);
+  @include font(25px, 500, 0.01em);
   color: $secondary-color;
   text-decoration: none;
 
@@ -135,7 +156,7 @@
   //   color: $accent-color;
 
   @include min-mobile {
-    @include font(24px, 500, 0.01em);
+    @include font(17px, 500, 0.01em);
   }
   // }  /* оставила для примера код accent */
 }
@@ -143,11 +164,20 @@
 .address-bm-box {
   display: flex;
   padding-top: 24px;
+  transform: translateX(-19px);
 }
 
 .map-bm {
   padding: 10px 10px 30px 0;
-  transform: translateX(-5px);
+  // transform: translateX(5px);
+  transform: translate(5px, -5px);
+}
+
+.icon-map {
+  @include min-mobile {
+    max-width: 32px;
+    height: 35px;
+  }
 }
 
 .address-link-bm {
@@ -155,7 +185,7 @@
     @include font(25px, 600, 0.03em);
   }
 
-  @include font(22px, 600, 0.03em);
+  @include font(18px, 600, 0.03em);
 }
 
 .menu-social {

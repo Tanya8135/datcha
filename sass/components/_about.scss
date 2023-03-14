@@ -46,7 +46,11 @@
 }
 
 .size-about {
-  @include tabletMin {
+  @include desktop {
+    font-size: 28px;
+  }
+
+  @include tablet {
     font-size: 24px;
   }
 
