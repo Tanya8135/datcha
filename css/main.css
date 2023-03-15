@@ -903,7 +903,7 @@ address {
 }
 .mobile-menu__list {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 .mobile-menu__item {
   display: -webkit-box;
@@ -937,14 +937,42 @@ address {
 }
 
 .menu-contacts {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
 }
 
 .menu-contacts__list {
+  display: flex-inline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
-  margin: 0 auto;
-  list-style: none;
+  margin: 0;
+}
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  .menu-contacts__list {
+    display: flex-inline;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .menu-contacts__item {
@@ -958,8 +986,7 @@ address {
 }
 
 .menu-contacts__link {
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 19px;
   letter-spacing: 0.01em;
   color: #423d1b;
   text-decoration: none;
@@ -976,6 +1003,9 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 24px;
   -webkit-transform: translateX(-19px);
           transform: translateX(-19px);
@@ -1001,7 +1031,7 @@ address {
 }
 @media screen and (min-width: 414px) and (max-width: 767px) {
   .address-link-bm {
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 600;
     letter-spacing: 0.03em;
   }
@@ -1011,6 +1041,9 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu-social__list {
