@@ -14,7 +14,6 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  justify-content: center;
   // justify-content: space-around;
   padding-top: 30px;
   min-height: 100%;
@@ -117,9 +116,13 @@
     @include short-font(18px, 0.01em);
     margin-bottom: 8px;
     &:last-child {
-      margin-bottom: 32px;
+      margin-bottom: 20px;
     }
   }
+}
+
+.ps-text {
+  font-style: italic;
 }
 
 //   .current-menu {
@@ -211,7 +214,6 @@
 
 .menu-social__item {
   display: inline-flex;
-  // padding: 10px;
 }
 
 .menu-social__link {

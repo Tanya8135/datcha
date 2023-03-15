@@ -131,6 +131,9 @@
                 <p class="mobile-menu__text">Пребывание в выходной день</p>
                 <p class="mobile-menu__prise">300 грн</p>
               </li>
+              <li class="mobile-menu__item">
+                <p class="ps-text">(Цена указана за одного человека)</p>
+              </li>
 
               <ul>
                 <h3 class="price-bm-subtitle-">В стоимость входит:</h3>
@@ -149,50 +152,51 @@
 
           <div class="menu-contacts">
             <ul class="menu-contacts__list">
-              <li class="menu-contacts__item">
-                <a
-                  id="tel:+380964875185"
-                  href="tel:+380964875185"
-                  class="menu-contacts__link menu-contacts__link--accent"
-                >
-                  +38 096 487 51 85</a
-                >
-              </li>
-              <li class="menu-contacts__item">
-                <a
-                  id="tel:+380675609482"
-                  href="tel:+380675609482"
-                  class="menu-contacts__link menu-contacts__link--accent"
-                >
-                  +38 067 560 94 82</a
-                >
-              </li>
-              <li class="menu-contacts__item">
-                <address class="address-bm-box">
-                  <div class="map-bm">
-                    <a
-                      href="https://goo.gl/maps/Yw1rKM6HGrmVK9iBA"
-                      target="_blank"
-                      rel="noopener nofollow noreferrer"
-                    >
-                      <svg width="35" height="38" class="icon-map">
-                        <use href="./images/icons.svg#icon-map"></use>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="address-bm">
-                    <a
-                      class="address-link-bm"
-                      href="https://goo.gl/maps/Yw1rKM6HGrmVK9iBA"
-                      target="_blank"
-                      rel="noopener nofollow noreferrer"
-                      >пров. Набережний 5а <br />
-                      с. Чкаловка</a
-                    >
-                  </div>
-                </address>
-              </li>
+              <div class="menu-contacts__box">
+                <li class="menu-contacts__item">
+                  <a
+                    id="tel:+380964875185"
+                    href="tel:+380964875185"
+                    class="menu-contacts__link menu-contacts__link--accent"
+                  >
+                    +38 096 487 51 85</a
+                  >
+                </li>
+                <li class="menu-contacts__item">
+                  <a
+                    id="tel:+380675609482"
+                    href="tel:+380675609482"
+                    class="menu-contacts__link menu-contacts__link--accent"
+                  >
+                    +38 067 560 94 82</a
+                  >
+                </li>
+              </div>
             </ul>
+
+            <address class="address-bm-box">
+              <div class="map-bm">
+                <a
+                  href="https://goo.gl/maps/Yw1rKM6HGrmVK9iBA"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                >
+                  <svg width="35" height="38" class="icon-map">
+                    <use href="./images/icons.svg#icon-map"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="address-bm">
+                <a
+                  class="address-link-bm"
+                  href="https://goo.gl/maps/Yw1rKM6HGrmVK9iBA"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >пер. Набережний 5а <br />
+                  с. Чкаловка</a
+                >
+              </div>
+            </address>
           </div>
 
           <div class="menu-social">
@@ -239,6 +243,7 @@
       <section class="hero">
         <h1 class="title-hero">Datcha</h1>
         <p class="subtitle-hero">база отдыха</p>
+        <button type="button" class="btn-hero-prise" data-modal-open>Прайс</button>
         <ul class="social">
           <li class="social_item">
             <a
@@ -639,6 +644,75 @@
       </div>
     </footer>
 
+    <!-- MODAL -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-hero">
+        <h2 class="title-modal">Прайс</h2>
+
+        <ul class="text-modal">
+          <li class="text-modal__item">Дневное пребывание без заселения - 150 грн с человека</li>
+          <li class="text-modal__item">Пребывание в будний день - 250 грн с человека</li>
+          <li class="text-modal__item">Пребывание в выходной день - 300 грн с человека</li>
+          <li class="text-modal__item ps-text">(Цена указана за одного человека)</li>
+        </ul>
+
+        <h3 class="subtitle-modal">В стоимость входит:</h3>
+
+        <ul class="modal-descr">
+          <li class="modal-descr__item">мангал</li>
+          <li class="modal-descr__item">беседка</li>
+          <li class="modal-descr__item">стоянка</li>
+        </ul>
+
+        <p class="subtitle-modal"><b>Сделать заказ</b></p>
+        <a class="contact-modal" href="tel:+380675609482">0675609482</a>
+        <a class="contact-modal" href="tel:+380964875185">0964875185</a>
+
+        <div class="menu-social-modal">
+          <ul class="menu-social__list">
+            <li class="menu-social__item">
+              <a
+                href="https://www.instagram.com/baza_otdykha_kr/"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                class="menu-social__modal"
+                >Instagram
+                <span class="menu-social__border"></span>
+              </a>
+            </li>
+            <li class="menu-social__item">
+              <a
+                href="https://t.me/datcha_bv"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                class="menu-social__modal"
+                >Telegram
+                <span class="menu-social__border"></span>
+              </a>
+            </li>
+
+            <li class="menu-social__item">
+              <a
+                href="https://www.facebook.com/datcha.afalina"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                class="menu-social__modal"
+                >Facebook
+                <span class="menu-social__border"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- close-btn -->
+        <button type="button" class="close-btn-modal" data-modal-close>
+          <svg width="38" height="38">
+            <use href="./images/icons.svg#icon-btn-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <!-- SCROLL -->
     <!-- чтобы не прокручивалась модалка -->
     <script
@@ -655,8 +729,9 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     ></script>
 
-    <script src="./js/slider.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/slider.js"></script>
     <!-- <script defer src="./js/language.js"></script> -->
   </body>
 </html>

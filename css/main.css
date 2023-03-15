@@ -685,6 +685,7 @@ address {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-top: 20px;
   }
 }
 
@@ -775,8 +776,9 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: translateX(7px);
-          transform: translateX(7px);
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+  padding-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
   .social-box {
@@ -785,6 +787,7 @@ address {
             justify-content: end;
     -webkit-transform: translate(-20px, -20px);
             transform: translate(-20px, -20px);
+    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
@@ -823,9 +826,6 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-top: 30px;
   min-height: 100%;
 }
@@ -940,7 +940,11 @@ address {
   margin-bottom: 8px;
 }
 .mobile-menu__item-descr:last-child {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
+}
+
+.ps-text {
+  font-style: italic;
 }
 
 .menu-contacts {
@@ -1213,7 +1217,8 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 32px;
+  padding-top: 20px;
+  padding-bottom: 32px;
 }
 
 .menu-social__modal {

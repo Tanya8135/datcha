@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20px;
   }
 }
 
@@ -94,6 +95,7 @@
   @include tabletMin {
     justify-content: end;
     transform: translate(-20px, -20px);
+    padding-bottom: 0;
   }
 
   @include desktop {
@@ -102,7 +104,8 @@
 
   display: flex;
   // padding-bottom: 32px;
-  transform: translateX(7px);
+  transform: translateX(20px);
+  padding-bottom: 32px;
 }
 
 .social-footer {
