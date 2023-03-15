@@ -5,6 +5,7 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 0;
+  padding: 0;
 }
 
 .footer-box {
@@ -17,10 +18,10 @@
 
 .logo-box-footer {
   @include tabletMin {
-    padding: 114px 0 115px;
+    padding: 30px 0 30px;
   }
 
-  padding-top: 15px;
+  padding: 15px 0;
 }
 
 // .logo-mob-footer {
@@ -36,9 +37,9 @@
   padding-bottom: 14px;
 }
 
-.contact-box {
-  padding: 32px 0 32px 0;
-}
+// .contact-box {
+//   padding: 32px 0 32px 0;
+// }
 
 .contact-item {
   display: flex;
@@ -62,12 +63,11 @@
 .address-box {
   @include tabletMin {
     justify-content: start;
-    padding: 5px 0 52px 0;
+    padding: 0 0 12px 0;
   }
 
   display: flex;
-  // justify-content: end;
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 
 .map-box {
@@ -93,16 +93,20 @@
 .social-box {
   @include tabletMin {
     justify-content: end;
-    transform: translate(-5px, -120px);
+    transform: translate(-20px, -20px);
   }
 
   @include desktop {
-    transform: translate(-44px, -130px);
+    transform: translate(-60px, -30px);
   }
 
   display: flex;
-  padding-bottom: 32px;
+  // padding-bottom: 32px;
   transform: translateX(7px);
+}
+
+.social-footer {
+  display: flex;
 }
 
 .icon-color-footer {

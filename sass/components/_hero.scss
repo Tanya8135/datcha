@@ -41,6 +41,7 @@
 .title-hero {
   @include desktop {
     font-size: 190px;
+    padding-top: 150px;
   }
 
   @include tablet {
@@ -56,13 +57,14 @@
   text-align: center;
   color: $accent-color;
   text-shadow: 4px 8px 8px $accent-shadow;
-  padding-top: 219px;
+  padding-top: 165px;
 }
 
 .subtitle-hero {
   /* потом связать еще с одни subtitle */
   @include desktop {
-    font-size: 40px
+    font-size: 40px;
+    padding-bottom: 32px;
   }
 
   @include tablet {
@@ -74,13 +76,13 @@
   font-family: 'EB Garamond', serif;
   text-align: center;
   color: $accent-color;
-  padding-bottom: 162px;
+  padding-bottom: 165px;
 }
 
 .social {
   display: flex;
   justify-content: end;
-  padding: 0 15px 15px;
+  padding: 0 15px 32px;
 }
 
 .social_item {
