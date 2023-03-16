@@ -520,8 +520,6 @@ address {
   fill: #a1a099;
   background-color: transparent;
   border: none;
-  width: 62px;
-  height: 62px;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
@@ -530,10 +528,13 @@ address {
     fill: #a1a099;
     background-color: transparent;
     border: none;
-    width: 124px;
-    height: 124px;
     cursor: pointer;
   }
+}
+
+.shadow-arrow:active {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* тень чисто на иконку */
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1920px) {

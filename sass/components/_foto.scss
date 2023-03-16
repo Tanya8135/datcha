@@ -12,7 +12,7 @@
 
 .title-foto {
   @include desktop {
-font-size: 70px
+    font-size: 70px;
   }
 
   @include tablet {
@@ -48,8 +48,8 @@ font-size: 70px
   fill: $arrow-fill;
   background-color: transparent;
   border: none;
-  width: 62px;
-  height: 62px;
+  // width: 62px;
+  // height: 62px;
   // cursor: pointer;
 }
 
@@ -59,10 +59,14 @@ font-size: 70px
     fill: $arrow-fill;
     background-color: transparent;
     border: none;
-    width: 124px;
-    height: 124px;
+    // width: 124px;
+    // height: 124px;
     cursor: pointer;
   }
+}
+
+.shadow-arrow:active {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* тень чисто на иконку */
 }
 
 .arrow-mob-tab-l {
