@@ -34,17 +34,19 @@
  
   /* open btn for modal */
   @include tabletMin {
-      @include short-font(32px, 0.1em);
+    @include font(24px, 600, 00.03em);
 
   color: $primary-color;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  margin-bottom: 32px;
-  padding: 20px 37px;
-  background-color: $bg-burger-menu;
+  // margin: 0 auto;
+  // margin-bottom: 32px;
+  padding: 20px 0;
+  // padding: 0;
+  background-color: transparent;
+  // background-color: $bg-burger-menu;
   border-radius: 30px;
   border: none;
   outline: none;
@@ -52,15 +54,8 @@
   }
 
   @include desktop {
+    font-size: 28px;
     cursor: pointer;
-
-    &:hover {
-      background-color: $hover-open-btn;
-    }
-
-    &:active {
-      box-shadow: inset 0px 5px 7px rgba(0, 0, 0, 0.25);
-    }
   }
 
   display: none;

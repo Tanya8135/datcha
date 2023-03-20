@@ -51,6 +51,13 @@
   font-weight: 600;
   src: url("../fonts/eb-garamond-v26-latin-600.woff2") format("woff2"), url("../fonts/eb-garamond-v26-latin-600.woff") format("woff");
 }
+::-moz-selection {
+  background-color: #e2d570; /* применяет стили к части документа, который был выделен пользователем (например, с помощью мыши) */
+}
+::selection {
+  background-color: #e2d570; /* применяет стили к части документа, который был выделен пользователем (например, с помощью мыши) */
+}
+
 html {
   scroll-behavior: smooth; /* плавная прокрутка скрол */
 }
@@ -163,7 +170,7 @@ address {
 }
 
 .nav-site-item {
-  margin-right: 68px;
+  margin-right: 32px;
 }
 .nav-site-item:last-child {
   margin-right: 0;
@@ -703,6 +710,7 @@ address {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.05em;
+  color: #263e24;
   padding-bottom: 14px;
 }
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
@@ -1109,8 +1117,9 @@ address {
 }
 @media screen and (min-width: 768px) {
   .btn-hero-prise {
-    font-size: 32px;
-    letter-spacing: 0.1em;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
     color: #263e24;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1121,10 +1130,8 @@ address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 auto;
-    margin-bottom: 32px;
-    padding: 20px 37px;
-    background-color: #fffbdd;
+    padding: 20px 0;
+    background-color: transparent;
     border-radius: 30px;
     border: none;
     outline: none;
@@ -1133,14 +1140,8 @@ address {
 }
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
   .btn-hero-prise {
+    font-size: 28px;
     cursor: pointer;
-  }
-  .btn-hero-prise:hover {
-    background-color: #FFF8BF;
-  }
-  .btn-hero-prise:active {
-    -webkit-box-shadow: inset 0px 5px 7px rgba(0, 0, 0, 0.25);
-            box-shadow: inset 0px 5px 7px rgba(0, 0, 0, 0.25);
   }
 }
 

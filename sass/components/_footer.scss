@@ -35,6 +35,8 @@
   }
 
   @include font(20px, 600, 0.05em);
+
+  color: $primary-color;
   padding-bottom: 14px;
 }
 

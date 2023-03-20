@@ -1,7 +1,7 @@
-// ::selection {
-//     // color: $invert-color-text;
-//     background-color: $bg-selection; /* применяет стили к части документа, который был выделен пользователем (например, с помощью мыши) */
-//   }
+::selection {
+    // color: $invert-color-text;
+    background-color: $bg-selection; /* применяет стили к части документа, который был выделен пользователем (например, с помощью мыши) */
+  }
   
   html {
     scroll-behavior: smooth; /* плавная прокрутка скрол */
