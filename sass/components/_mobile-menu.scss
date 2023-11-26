@@ -1,8 +1,6 @@
 .page-header .conteiner {
-  // min-height: 80px;
   display: flex;
   align-items: center;
-  // justify-content: space-between;
 }
 
 .mobile-menu__box {
@@ -10,11 +8,9 @@
     display: none;
   }
 
-  // position: relative;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  // justify-content: space-around;
   padding-top: 30px;
   min-height: 100%;
 }
@@ -30,9 +26,6 @@
 
   min-height: 38px;
   min-width: 38px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
 
   margin: 0;
   padding: 10px 10px 0 0;
@@ -47,7 +40,7 @@
   &:focus {
     fill: $accent-color;
     background-color: transparent;
-  } /* для примера */
+  }
 }
 
 .menu-container {
@@ -143,15 +136,10 @@
   font-style: italic;
 }
 
-//   .current-menu {
-//     color: $accent-color; /* пример current */
-//   }
-
 .menu-contacts {
   display: flex;
   flex-direction: column;
 
-  // display: block;
   margin: 0;
 }
 
@@ -167,7 +155,6 @@
 
 .menu-contacts__item {
   display: inline-flex;
-  // padding: 10px;
   margin-left: 10px;
 
   &:first-child {
@@ -182,17 +169,10 @@
   color: $secondary-color;
   text-decoration: none;
 
-  // &--accent {
-  //   @include font(28px, 500);
-  //   color: $accent-color;
-
   @include min-mobile {
     @include font(17px, 500, 0.01em);
   }
-  // }  /* оставила для примера код accent */
 }
-
-//
 
 .address-bm-box {
   display: flex;
